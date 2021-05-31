@@ -7,10 +7,12 @@ public class Scheduler implements Runnable{
     private String date;
     private Semaphore vaccinesSemaphore;
     private Semaphore requestsSemaphore;
+    private RequestPlanner requestPlanner;
 
-    public Scheduler (IVaccinationCenter vaccinationCenter, String date){
+    public Scheduler (IVaccinationCenter vaccinationCenter, String date, RequestPlanner requestPlanner){
         this.vaccinationCenter = vaccinationCenter;
         this.date = date;
+        this.requestPlanner = requestPlanner;
     }
 
     @Override
@@ -30,6 +32,8 @@ public class Scheduler implements Runnable{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+        } else {
+            return;
         }
 
         getRequestsSemaphore(vaccineLine);
@@ -39,7 +43,7 @@ public class Scheduler implements Runnable{
         while(acquiredVaccines > 0){
             try {
                 this.requestsSemaphore.acquire();
-                Request request = RequestPlanner.getHighestPriorityRequest(vaccineLine);
+                Request request = this.requestPlanner.getHighestPriorityRequest(vaccineLine);
                 this.requestsSemaphore.release();
 
                 boolean state = this.vaccinationCenter.addRequest(request, date);
@@ -55,7 +59,7 @@ public class Scheduler implements Runnable{
     }
 
     public boolean getRequestsSemaphore(String line) {
-        this.requestsSemaphore = RequestPlanner.getSemaphore(line);
+        this.requestsSemaphore = this.requestPlanner.getSemaphore(line);
         return requestsSemaphore != null ? true : false;
     }
 }

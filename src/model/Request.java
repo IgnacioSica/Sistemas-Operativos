@@ -12,8 +12,11 @@ public class Request {
     public String department;
     public String occupation;
     public String medicalCondition;
-    public String state;
-    public String channel;
+
+    public String key;
+    //public String state;
+    public String line;
+    public Priority priority;
 
     //public model.Request()
 }
