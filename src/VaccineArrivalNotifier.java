@@ -6,9 +6,19 @@ public class VaccineArrivalNotifier implements Runnable{
     private IVaccinesManagerIn vaccinesManagerIn;
     private Semaphore semaphore;
 
-    VaccineArrivalNotifier(AbstractMap.SimpleEntry<String, Integer> vaccines, IVaccinesManagerIn vaccinesManagerIn){
-        this.vaccines = vaccines;
+    private String source;
+    private String moment;
+
+    VaccineArrivalNotifier(String source, String moment, IVaccinesManagerIn vaccinesManagerIn){
+        this.source = source;
+        this.moment = moment;
+        this.vaccines = readNotification(source, moment);
         this.vaccinesManagerIn = vaccinesManagerIn;
+    }
+
+    private AbstractMap.SimpleEntry<String, Integer> readNotification(String source, String moment){
+        // Todo
+        return null;
     }
 
     @Override

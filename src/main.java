@@ -7,7 +7,8 @@ public class main {
         VaccinesManager vaccinesManager = new VaccinesManager();
 
         SchedulerInitializer schedulerInitializer = new SchedulerInitializer(requestPlanner, vaccinesManager);
+        ServerInitializer serverInitializer = new ServerInitializer(vaccinesManager);
 
-        Moments moments = new Moments(schedulerInitializer);
+        Moments moments = new Moments(schedulerInitializer, serverInitializer);
     }
 }
