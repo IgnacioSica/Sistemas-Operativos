@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b56ee81-9c9e-4227-8718-526e900050e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/IRequestPlannerOut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/RequestProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/RequestProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/Scheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/Scheduler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/SchedulerInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/SchedulerInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/IRequestPlanner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/RequestPlanner$VaccineLine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/RequestPlanner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/Vaccines.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RequestProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RequestProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SchedulerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SchedulerInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/IRequestPlanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/IRequestPlannerIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/RequestPlanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/RequestPlanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Vaccines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/VaccinesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VaccineArrivalNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VaccineArrivalNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -98,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622314199591</updated>
       <workItem from="1622470074409" duration="2902000" />
-      <workItem from="1622473516037" duration="18451000" />
+      <workItem from="1622473516037" duration="19840000" />
     </task>
     <servers />
   </component>

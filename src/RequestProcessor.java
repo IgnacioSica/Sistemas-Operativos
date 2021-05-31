@@ -1,7 +1,3 @@
-import model.IRequestPlannerIn;
-import model.Priority;
-import model.Request;
-
 import java.util.concurrent.Semaphore;
 
 public class RequestProcessor implements Runnable {

@@ -1,7 +1,3 @@
-import model.RequestPlanner;
-import model.VaccinationCenter;
-import model.VaccinesManager;
-
 public class SchedulerInitializer implements Runnable{
     VaccinationCenter[] centers;
     String[] moments;
