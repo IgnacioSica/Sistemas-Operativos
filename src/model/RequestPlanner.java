@@ -65,7 +65,7 @@ public class RequestPlanner implements IRequestPlanner {
                 TreeMap<String, Request> map = priorityMap.get(priority);
                 if (!map.isEmpty()) {
                     String key = map.lastKey();
-                    Request request = map.get(key);
+                    Request request = map.remove(key);
                     return request;
                 }
             }

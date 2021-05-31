@@ -19,6 +19,12 @@ public class Request {
     public Priority priority;
 
     //public model.Request()
+
+    public void updateRequest(String key, String line, Priority priority){
+        this.key = key;
+        this.line = line;
+        this.priority = priority;
+    }
 }
 
 /*

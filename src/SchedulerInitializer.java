@@ -1,7 +1,7 @@
 import model.RequestPlanner;
 import model.VaccinationCenter;
 
-public class SchedulerInitializer extends Thread{
+public class SchedulerInitializer implements Runnable{
     VaccinationCenter[] centers;
     String[] moments;
     int momentsIndex;

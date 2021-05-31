@@ -5,6 +5,5 @@ public class main {
         RequestPlanner requestPlanner = new RequestPlanner();
         requestPlanner.addLine("pfizer");
         requestPlanner.addLine("sinovac");
-
     }
 }
