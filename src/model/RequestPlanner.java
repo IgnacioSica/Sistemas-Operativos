@@ -14,6 +14,7 @@ public class RequestPlanner implements IRequestPlanner {
         semaphores = new HashMap<>();
     }
 
+    @Override
     public void addLine(String lineName){
         VaccineLine line = new VaccineLine(lineName);
         vaccineLines.put(lineName, line);
@@ -21,11 +22,22 @@ public class RequestPlanner implements IRequestPlanner {
         semaphores.put(lineName, semLine);
     }
 
+    @Override
     public Semaphore getSemaphore(String line){
         Semaphore semaphore = semaphores.get(line);
         return semaphore != null ? semaphore : null;
     }
 
+    @Override
+    public boolean addRequest(Request request, String key, String lineName, Priority priority){
+        VaccineLine line = vaccineLines.get(lineName);
+        if(line == null)
+            return false;
+        line.addRequest(request, key, priority);
+        return true;
+    }
+
+    @Override
     public Request getHighestPriorityRequest(String lineName) {
         VaccineLine line = vaccineLines.get(lineName);
         return line != null ? line.getHighestPriorityRequest() : null;
