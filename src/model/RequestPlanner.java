@@ -1,65 +1,72 @@
 package model;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.TreeMap;
+import java.util.concurrent.Semaphore;
 
-public class RequestPlanner implements IRequestPlanner{
+public class RequestPlanner implements IRequestPlanner {
     private static HashMap<String, VaccineLine> vaccineLines;
+    private static Map<String, Semaphore> semaphores;
 
-    public static Request getHighestPriorityRequest(String lineName){
+    public static Request getHighestPriorityRequest(String lineName) {
         VaccineLine line = vaccineLines.get(lineName);
 
         return line != null ? line.getHighestPriorityRequest() : null;
     }
 
-    RequestPlanner(){
+    RequestPlanner() {
         VaccineLine pfizer = new VaccineLine("pfizer");
         VaccineLine sinovac = new VaccineLine("sinovac");
         vaccineLines = new HashMap<>();
         vaccineLines.put("pfizer", pfizer);
         vaccineLines.put("sinovac", sinovac);
+        Semaphore semaphorePfizer = new Semaphore(1,true);
+        Semaphore semaphoreSinovac = new Semaphore(1,true);
+        semaphores.put("pfizer", semaphorePfizer);
+        semaphores.put("sinovac", semaphoreSinovac);
     }
 
-    private class VaccineLine{
-        private TreeMap<String, Request> highestPriority;
-        private TreeMap<String, Request> highPriority;
-        private TreeMap<String, Request> lowPriority;
-        private TreeMap<String, Request> lowestPriority;
+    public static Semaphore getSemaphore(String line){
+        Semaphore semaphore = semaphores.get(line);
+        return semaphore != null ? semaphore : null;
+    }
+
+    private class VaccineLine {
+        private TreeMap<String, Request> highestPriorityMap;
+        private TreeMap<String, Request> highPriorityMap;
+        private TreeMap<String, Request> lowPriorityMap;
+        private TreeMap<String, Request> lowestPriorityMap;
+
+        private Map<Priority, TreeMap<String, Request>> priorityMap;
 
         public String name;
 
-        VaccineLine(String name){
+        VaccineLine(String name) {
             this.name = name;
-            highestPriority  = new TreeMap<>();
-            highPriority = new TreeMap<>();
-            lowPriority = new TreeMap<>();
-            lowestPriority = new TreeMap<>();
+            highestPriorityMap = new TreeMap<>();
+            highPriorityMap = new TreeMap<>();
+            lowPriorityMap = new TreeMap<>();
+            lowestPriorityMap = new TreeMap<>();
+            priorityMap.put(Priority.highestPriority, highestPriorityMap);
+            priorityMap.put(Priority.highPriority, highPriorityMap);
+            priorityMap.put(Priority.lowPriority, lowPriorityMap);
+            priorityMap.put(Priority.lowestPriority, lowestPriorityMap);
         }
 
-        public Request getHighestPriorityRequest(){
-            Request request;
-            if(!highestPriority.isEmpty()){
-                String key = highestPriority.lastKey();
-                request = highestPriority.remove(key);
-                return request;
-            }
+        public void addRequest(Request request, String key, Priority priority) {
+            TreeMap<String, Request> map = priorityMap.get(priority);
+            map.put(key, request);
+        }
 
-            if(!highPriority.isEmpty()){
-                String key = highPriority.lastKey();
-                request = highPriority.remove(key);
-                return request;
-            }
-
-            if(!lowPriority.isEmpty()){
-                String key = lowPriority.lastKey();
-                request = lowPriority.remove(key);
-                return request;
-            }
-
-            if(!lowestPriority.isEmpty()){
-                String key = lowestPriority.lastKey();
-                request = lowestPriority.remove(key);
-                return request;
+        public Request getHighestPriorityRequest() {
+            for (Priority priority : Priority.values()) {
+                TreeMap<String, Request> map = priorityMap.get(priority);
+                if (!map.isEmpty()) {
+                    String key = map.lastKey();
+                    Request request = map.get(key);
+                    return request;
+                }
             }
             return null;
         }

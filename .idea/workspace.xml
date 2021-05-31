@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b56ee81-9c9e-4227-8718-526e900050e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/IRequestPlanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Priority.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sistemas-Operativos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Sistemas-Operativos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SchedulerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SchedulerInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/RequestPlanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/RequestPlanner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +17,7 @@
       <list>
         <option value="Class" />
         <option value="Interface" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -74,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622314199591</updated>
       <workItem from="1622470074409" duration="2902000" />
-      <workItem from="1622473516037" duration="5149000" />
+      <workItem from="1622473516037" duration="8312000" />
     </task>
     <servers />
   </component>

@@ -32,6 +32,8 @@ public class Scheduler implements Runnable{
             }
         }
 
+        getRequestsSemaphore(vaccineLine);
+
         vaccinationCenter.addVaccines(acquiredVaccines, date);
 
         while(acquiredVaccines > 0){
@@ -50,5 +52,10 @@ public class Scheduler implements Runnable{
                 e.printStackTrace();
             }
         }
+    }
+
+    public boolean getRequestsSemaphore(String line) {
+        this.requestsSemaphore = RequestPlanner.getSemaphore(line);
+        return requestsSemaphore != null ? true : false;
     }
 }
