@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.Semaphore;
 
-public class RequestPlanner implements IRequestPlanner {
+public class RequestPlanner implements IRequestPlannerIn, IRequestPlannerOut {
     private HashMap<String, VaccineLine> vaccineLines;
     private Map<String, Semaphore> semaphores;
 
@@ -43,7 +43,7 @@ public class RequestPlanner implements IRequestPlanner {
         return line != null ? line.getHighestPriorityRequest() : null;
     }
 
-    private class VaccineLine {
+    private class VaccineLine { // cola de solicitudes segun el tipo de vacuna
         private Map<Priority, TreeMap<String, Request>> priorityMap;
         public String name;
 
@@ -64,7 +64,7 @@ public class RequestPlanner implements IRequestPlanner {
             for (Priority priority : Priority.values()) {
                 TreeMap<String, Request> map = priorityMap.get(priority);
                 if (!map.isEmpty()) {
-                    String key = map.lastKey();
+                    String key = map.lastKey(); // llave de mayor valor
                     Request request = map.remove(key);
                     return request;
                 }

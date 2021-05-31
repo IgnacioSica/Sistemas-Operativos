@@ -1,4 +1,4 @@
-import model.IRequestPlanner;
+import model.IRequestPlannerIn;
 import model.Priority;
 import model.Request;
 
@@ -6,10 +6,10 @@ import java.util.concurrent.Semaphore;
 
 public class RequestProcessor implements Runnable {
     private Request request;
-    private IRequestPlanner requestPlanner;
+    private IRequestPlannerIn requestPlanner;
     private Semaphore semaphore;
 
-    RequestProcessor(Request request, IRequestPlanner requestPlanner){
+    RequestProcessor(Request request, IRequestPlannerIn requestPlanner){
         this.request = request;
         this.requestPlanner = requestPlanner;
     }
@@ -20,8 +20,8 @@ public class RequestProcessor implements Runnable {
         String scoreFormatted = String.format("%04d", score);
 
         String key = scoreFormatted + this.request.id;
-        String line = getLine(request.age, request.occupation);
-        Priority priority = getPriotity(request.age, request.occupation);
+        String line = getLine(request.age, request.occupation); // tipo de vacuna
+        Priority priority = getPriotity(request.age, request.occupation); // franja
 
         request.updateRequest(key, line, priority);
 
@@ -29,7 +29,7 @@ public class RequestProcessor implements Runnable {
 
         try {
             semaphore.acquire();
-            requestPlanner.addRequest(request, key, line, priority);
+            this.requestPlanner.addRequest(request, key, line, priority);
             semaphore.release();
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -41,12 +41,12 @@ public class RequestProcessor implements Runnable {
 
         double genderMultiplier = request.gender.equals("male") ? 1 : 0.93;
 
-        double medicalMultiplier = getMedicalScore(request.medicalCondition);
+        double medicalMultiplier = getMedicalMultiplier(request.medicalCondition);
 
         return (int) (age * genderMultiplier * medicalMultiplier);
     }
 
-    private static double getMedicalScore(String medicalCondition){
+    private static double getMedicalMultiplier(String medicalCondition){
         double multiplier;
         switch (medicalCondition) {
             case "Asma":
@@ -83,11 +83,11 @@ public class RequestProcessor implements Runnable {
         return multiplier;
     }
 
-    private static Priority getPriotity(int age, String occupation){
-        return Priority.highestPriority;
+    private static String getLine(int age, String occupation){
+        return "pfizer"; //"sinovac"
     }
 
-    private static String getLine(int age, String occupation){
-        return "pfizer";
+    private static Priority getPriotity(int age, String occupation){
+        return Priority.highestPriority;
     }
 }
