@@ -18,11 +18,14 @@ public class Scheduler implements Runnable{
         int availability = vaccinationCenter.getAvailability(date);
         int vaccines = vaccinationCenter.getVaccines(date);
         int acquiredVaccines = 0;
+        String vaccineLine = "";
 
         if(availability - vaccines > 0){
             try {
                 this.vaccinesSemaphore.acquire();
                 acquiredVaccines = Vaccines.getVaccines(availability - vaccines);
+                // ask for vaccine name
+
                 this.vaccinesSemaphore.release();
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -34,7 +37,7 @@ public class Scheduler implements Runnable{
         while(acquiredVaccines > 0){
             try {
                 this.requestsSemaphore.acquire();
-                Request request = RequestPlanner.getHigestPriorityRequest();
+                Request request = RequestPlanner.getHighestPriorityRequest(vaccineLine);
                 this.requestsSemaphore.release();
 
                 boolean state = this.vaccinationCenter.addRequest(request, date);

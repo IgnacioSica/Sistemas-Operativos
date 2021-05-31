@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b56ee81-9c9e-4227-8718-526e900050e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/INotify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IRequestManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Moments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Notifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RequestProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SchedulerInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VaccineArrivalNotifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/IVaccinationCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/IVaccinationCenterMoments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/RequestPlanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/VaccinationCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Vaccines.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/IRequestPlanner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sistemas-Operativos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Sistemas-Operativos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SchedulerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SchedulerInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/RequestPlanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/RequestPlanner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +31,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -81,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622314199591</updated>
       <workItem from="1622470074409" duration="2902000" />
-      <workItem from="1622473516037" duration="2106000" />
+      <workItem from="1622473516037" duration="5149000" />
     </task>
     <servers />
   </component>
