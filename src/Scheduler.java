@@ -4,12 +4,12 @@ import java.util.concurrent.Semaphore;
 public class Scheduler implements Runnable{
     private IVaccinationCenter vaccinationCenter;
     private String date;
+    private IVaccinesManagerOut vaccinesManager;
     private Semaphore vaccinesSemaphore;
-    private Semaphore requestsSemaphore;
     private IRequestPlannerOut requestPlanner;
-    private VaccinesManager vaccinesManager;
+    private Semaphore requestsSemaphore;
 
-    public Scheduler (IVaccinationCenter vaccinationCenter, String date, IRequestPlannerOut requestPlanner, VaccinesManager vaccinesManager){
+    public Scheduler (IVaccinationCenter vaccinationCenter, String date, IRequestPlannerOut requestPlanner, IVaccinesManagerOut vaccinesManager){
         this.vaccinationCenter = vaccinationCenter;
         this.date = date;
         this.requestPlanner = requestPlanner;
@@ -60,8 +60,8 @@ public class Scheduler implements Runnable{
     }
 
     private boolean getRequestsSemaphore(String line) {
-        this.requestsSemaphore = this.requestPlanner.getSemaphore(line);
-        return requestsSemaphore != null ? true : false;
+        this.vaccinesSemaphore = this.requestPlanner.getSemaphore(line);
+        return vaccinesSemaphore != null ? true : false;
     }
 
     private boolean getVaccinesSemaphore() {

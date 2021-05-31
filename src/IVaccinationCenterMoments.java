@@ -1,3 +1,3 @@
 public interface IVaccinationCenterMoments {
-    public void nextMoment(String date);
+    void nextMoment(String date);
 }
