@@ -1,5 +1,3 @@
-package model;
-
 import java.util.concurrent.Semaphore;
 
 public interface IRequestPlannerIn {

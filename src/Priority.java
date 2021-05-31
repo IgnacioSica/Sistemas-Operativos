@@ -1,5 +1,3 @@
-package model;
-
 public enum Priority {
     highestPriority,
     highPriority,

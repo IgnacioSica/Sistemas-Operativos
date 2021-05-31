@@ -1,7 +1,3 @@
-package model;
-
-import java.util.Date;
-
 public class Request {
     public String id;
     public String firstname;
@@ -18,7 +14,7 @@ public class Request {
     public String line;
     public Priority priority;
 
-    //public model.Request()
+    //public Request()
 
     public void updateRequest(String key, String line, Priority priority){
         this.key = key;

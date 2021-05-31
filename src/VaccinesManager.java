@@ -1,5 +1,3 @@
-package model;
-
 import java.util.AbstractMap;
 import java.util.HashMap;
 import java.util.Map;

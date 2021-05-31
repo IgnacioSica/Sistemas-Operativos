@@ -1,5 +1,3 @@
-package model;
-
 public interface IVaccinationCenter {
     int getAvailability(String date);
     void addVaccines(int vaccines, String date);
