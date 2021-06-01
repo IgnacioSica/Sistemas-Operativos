@@ -11,7 +11,7 @@ public class RequestsReader {
         BufferedReader br = null;
 
         try{
-            archivo = new File("/Users/fmehues/Desktop/fede/Sistemas-Operativos/input/Solicitudes de agenda.txt");
+            archivo = new File("./input/Solicitudes de agenda.txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
 

@@ -11,7 +11,7 @@ public class VaccinesReader {
         BufferedReader br = null;
 
         try{
-            archivo = new File("/Users/fmehues/Desktop/fede/Sistemas-Operativos/input/Entrada de vacunas.txt");
+            archivo = new File("./input/Entrada de vacunas.txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
 

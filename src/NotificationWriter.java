@@ -8,7 +8,7 @@ public class NotificationWriter {
         PrintWriter pw = null;
         try
         {
-            fileWriter = new FileWriter("/Users/fmehues/Desktop/fede/Sistemas-Operativos/output/Usuarios agendados.txt", true);
+            fileWriter = new FileWriter("./output/Usuarios agendados.txt", true);
             pw = new PrintWriter(fileWriter);
             pw.println("usuario: " + requestId + ", centro: "+ centerId);
         } catch (Exception e) {
