@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b56ee81-9c9e-4227-8718-526e900050e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ConcreteReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RequestReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Vaccine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VaccineProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/Moments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/Moments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/RequestProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/RequestProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/Scheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/Scheduler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/SchedulerInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/SchedulerInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/VaccineArrivalNotifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/VaccineArrivalNotifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/IRequestPlannerIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/IRequestPlannerOut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/IVaccinationCenter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/IVaccinationCenterMoments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/Priority.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/Request.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/RequestPlannerIn$VaccineLine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/RequestPlannerIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/VaccinationCenter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/VaccinesManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IVaccinesManagerOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IVaccinesManagerOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Moments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Moments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RequestManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RequestPlanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RequestPlanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VaccinationCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VaccinationCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VaccineArrivalNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VaccineReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VaccinesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VaccinesManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-    </list>
+    <list default="true" id="0b56ee81-9c9e-4227-8718-526e900050e9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,15 +60,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
