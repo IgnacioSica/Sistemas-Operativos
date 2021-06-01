@@ -1,16 +1,16 @@
 public class VaccinationCenter {
-    VaccinationCenter(String centerName, int availableTurnsPerDay){
+    int availableTurns;
+    String name;
+    VaccinationCenter(String centerName, int availableTurnsPerDay) {
         availableTurns = availableTurnsPerDay;
         name = centerName;
     }
-    
-    int availableTurns;
-    String name;
-    
-    boolean availability(){
+
+    boolean availability() {
         return availableTurns > 0;
     }
-    void reserveATurn(){
+
+    void reserveATurn() {
         availableTurns--;
     }
 
