@@ -47,9 +47,10 @@ public class RequestPlanner implements IRequestPlannerIn, IRequestPlannerOut {
 
         VaccineLine(String name) {
             this.name = name;
+            this.priorityMap = new TreeMap<>();
             for (Priority priority: Priority.values()) {
                 TreeMap<String, Request> map = new TreeMap<>();
-                priorityMap.put(priority, map);
+                this.priorityMap.put(priority, map);
             }
         }
 

@@ -1,12 +1,13 @@
 public class SchedulerInitializer implements Runnable{
-    private VaccinationCenter[] centers;
+    private VaccinationCenter[] vaccinationCenters;
     private String moment;
     private IRequestPlannerOut requestPlanner;
     private IVaccinesManagerOut vaccinesManager;
 
-    SchedulerInitializer(IRequestPlannerOut requestPlannerOut, IVaccinesManagerOut vaccinesManagerOut){
+    SchedulerInitializer(IRequestPlannerOut requestPlannerOut, IVaccinesManagerOut vaccinesManagerOut, VaccinationCenter[] vaccinationCenters){
         this.requestPlanner = requestPlannerOut;
         this.vaccinesManager = vaccinesManagerOut;
+        this.vaccinationCenters = vaccinationCenters;
     }
 
     public void setMoment(String moment) {
@@ -16,12 +17,12 @@ public class SchedulerInitializer implements Runnable{
     @Override
     public void run() {
         while(true){
-            try {
+            /*try {
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }
-            for (VaccinationCenter vaccinationCenter: centers) {
+            }*/
+            for (VaccinationCenter vaccinationCenter: vaccinationCenters) {
                 Scheduler scheduler = new Scheduler(vaccinationCenter, moment, requestPlanner, vaccinesManager);
                 new Thread(scheduler).start();
             }

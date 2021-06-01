@@ -2,11 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b56ee81-9c9e-4227-8718-526e900050e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/RequestManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ConcreteReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RequestReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Vaccine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VaccineProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/Moments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/Moments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/RequestProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/RequestProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/Scheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/Scheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/SchedulerInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/SchedulerInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/VaccineArrivalNotifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/VaccineArrivalNotifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas-Operativos/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/IRequestPlannerIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/IRequestPlannerOut.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/IVaccinationCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/IVaccinationCenterMoments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/Priority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/RequestPlannerIn$VaccineLine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/RequestPlannerIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/VaccinationCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sistemas-Operativos/model/VaccinesManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IVaccinesManagerOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IVaccinesManagerOut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Moments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Moments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VaccineArrivalNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VaccineArrivalNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RequestManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RequestPlanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RequestPlanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VaccinationCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VaccinationCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VaccineArrivalNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VaccineReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VaccinesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VaccinesManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +51,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1tDqqMbaAR6YE7jEZ6migejoGTW" />
   <component name="ProjectViewState">
@@ -87,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622314199591</updated>
       <workItem from="1622470074409" duration="2902000" />
-      <workItem from="1622473516037" duration="23869000" />
+      <workItem from="1622473516037" duration="32336000" />
     </task>
     <servers />
   </component>

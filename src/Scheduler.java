@@ -1,27 +1,26 @@
-import java.util.AbstractMap;
 import java.util.concurrent.Semaphore;
 
 public class Scheduler implements Runnable{
     private IVaccinationCenter vaccinationCenter;
-    private String date;
+    private String moment;
     private IVaccinesManagerOut vaccinesManager;
     private Semaphore vaccinesSemaphore;
     private IRequestPlannerOut requestPlanner;
     private Semaphore requestsSemaphore;
 
-    public Scheduler (IVaccinationCenter vaccinationCenter, String date, IRequestPlannerOut requestPlanner, IVaccinesManagerOut vaccinesManager){
+    public Scheduler (IVaccinationCenter vaccinationCenter, String moment, IRequestPlannerOut requestPlanner, IVaccinesManagerOut vaccinesManager){
         this.vaccinationCenter = vaccinationCenter;
-        this.date = date;
+        this.moment = moment;
         this.requestPlanner = requestPlanner;
         this.vaccinesManager = vaccinesManager;
     }
 
     @Override
     public void run() {
-        int availability = vaccinationCenter.getAvailability(date);
-        int vaccines = vaccinationCenter.getVaccines(date);
+        int availability = vaccinationCenter.getAvailability(moment);
+        int vaccines = vaccinationCenter.getVaccines(moment);
 
-        AbstractMap.SimpleEntry<String, Integer> availableVaccines = new AbstractMap.SimpleEntry<String, Integer>("", 0);
+        Vaccine availableVaccines = new Vaccine("", 0);
 
         getVaccinesSemaphore();
 
@@ -37,21 +36,20 @@ public class Scheduler implements Runnable{
             return;
         }
 
-        getRequestsSemaphore(availableVaccines.getKey());
+        getRequestsSemaphore(availableVaccines.getVaccineType());
 
-        vaccinationCenter.addVaccines(availableVaccines.getValue(), date);
+        vaccinationCenter.addVaccines(availableVaccines.getAmount(), moment);
 
-        while(availableVaccines.getValue() > 0){
+        for (int i = 0; i < availableVaccines.getAmount(); i++) {
             try {
                 this.requestsSemaphore.acquire();
-                Request request = this.requestPlanner.getHighestPriorityRequest(availableVaccines.getKey());
+                Request request = this.requestPlanner.getHighestPriorityRequest(availableVaccines.getVaccineType());
                 this.requestsSemaphore.release();
 
-                boolean state = this.vaccinationCenter.addRequest(request, date);
+                boolean state = this.vaccinationCenter.addRequest(request, moment);
                 if(state){
                     Notifier notifier = new Notifier(/*Request*/);
                     new Thread(notifier).start();
-                    availableVaccines.setValue(availableVaccines.getValue() - 1);
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();

@@ -13,15 +13,15 @@ public class VaccinesManager implements IVaccinesManagerIn, IVaccinesManagerOut{
     }
 
     @Override
-    public AbstractMap.SimpleEntry<String, Integer>  getVaccines(int vaccines){
-        AbstractMap.SimpleEntry<String, Integer> availableVaccines;
+    public Vaccine getVaccines(int vaccines){
+        Vaccine availableVaccines;
         Map.Entry<String, Integer> maxVaccines = maxUsingIteration(vaccinesMap);
 
         if(maxVaccines.getValue() >= vaccines){
-            availableVaccines = new AbstractMap.SimpleEntry<String, Integer>(maxVaccines.getKey(), vaccines);
+            availableVaccines = new Vaccine(maxVaccines.getKey(), vaccines);
             vaccinesMap.replace(maxVaccines.getKey(), maxVaccines.getValue() - vaccines);
         } else {
-            availableVaccines = new AbstractMap.SimpleEntry<String, Integer>(maxVaccines.getKey(), maxVaccines.getValue());
+            availableVaccines = new Vaccine(maxVaccines.getKey(), maxVaccines.getValue());
             vaccinesMap.replace(maxVaccines.getKey(), 0);
         }
 
