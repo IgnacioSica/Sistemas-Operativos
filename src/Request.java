@@ -1,41 +1,71 @@
 public class Request {
-    public String id;
-    public String firstname;
-    public String lastname;
-    public String gender;
-    public int age;
-    //public Date birthdate;
-    public String department;
-    public String occupation;
-    public String medicalCondition;
+    Request(String newName, String newCedula, int newAge, String newDepartamento, boolean newSexIsFemale, boolean newHealthCareWorkerFirstLine, boolean newHealthCareWorkerSecondLine, boolean newEssentialWorker, String newChronicHealthConditions){
+        name = newName;
+        cedula = newCedula;
+        age = newAge;
+        departamento = newDepartamento;
+        sexIsFemale = newSexIsFemale;
+        healthCareWorkerFirstLine = newHealthCareWorkerFirstLine;
+        healthCareWorkerSecondLine = newHealthCareWorkerSecondLine;
+        essentialWorker = newEssentialWorker;
+        chronicHealthConditions = newChronicHealthConditions;
+        priorityScore = getPriorityScore();
+        priorityLevel = getPriorityLevel();
+    }
+    String name;
+    String cedula;
+    int age;
+    String departamento;
+    boolean sexIsFemale;
+    boolean healthCareWorkerFirstLine;
+    boolean healthCareWorkerSecondLine;
+    boolean essentialWorker;
+    String chronicHealthConditions;
+    double priorityScore;
+    int priorityLevel;
 
-    public String key;
-    //public String state;
-    public String line;
-    public Priority priority;
 
-    //public Request()
+    double getPriorityScore(){
+        double score = age;
+        if(chronicHealthConditions != "n/a"){
+            score = score * 1.1;
+        }
+        if(sexIsFemale){
+            score = score * 0.93;
+        }
+        return score;
+    }
 
-    public void updateRequest(String key, String line, Priority priority){
-        this.key = key;
-        this.line = line;
-        this.priority = priority;
+    int getPriorityLevel(){
+        if(healthCareWorkerFirstLine){
+            return 0;
+        }else if(healthCareWorkerSecondLine){
+            return 1;
+        }else if(age >= 80){
+            return 2;
+        }else if(age >= 70){
+            return 3;
+        }else if(age >= 60){
+            return 4;
+        }else if(essentialWorker){
+            return 5;
+        } else{
+            return 6;
+        }
+    }
+
+    static Request fromString(String data){
+        var dataFields = data.split(",");
+        String newCedula = dataFields[0];
+        String newName = dataFields[1] + " " + dataFields[2];
+        boolean newSexIsFemale = dataFields[3].equals( "Female");
+        int newAge = Integer.parseInt(dataFields[4]);
+        String newDepartamento = dataFields[5];
+        boolean newHealthCareWorkerFirstLine = dataFields[6].equals( "personal de la salud(primera línea)");
+        boolean newHealthCareWorkerSecondLine = dataFields[6].equals( "personal de la salud(segunda línea)");
+        boolean newEssentialWorker = dataFields[6].equals( "trabajador escenciales");
+        String newChronicHealthConditions = dataFields[7];
+        Request newRequest = new Request(newName, newCedula, newAge, newDepartamento, newSexIsFemale, newHealthCareWorkerFirstLine, newHealthCareWorkerSecondLine, newEssentialWorker, newChronicHealthConditions);
+        return newRequest;
     }
 }
-
-/*
-{
-    "cédula": "830-75-6515",
-    "nombre": "Kate",
-    "apellido": "Feeley",
-    "género": "Female",
-    "edad": 68,
-    "departamento": "Lavalleja",
-    "ocupación": "jubilado",
-    "condición_médica": "n/a",
-//  "centro_p1": "centro A",
-//  "centro_p2": "centro B",
-//  "centro_p3": "centro D",
-//  "vacunación_inmediata": “false"
-}
- */
