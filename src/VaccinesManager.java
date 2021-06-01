@@ -1,31 +1,14 @@
-import java.util.AbstractMap;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Semaphore;
 
-public class VaccinesManager implements IVaccinesManagerIn, IVaccinesManagerOut{
+public class VaccinesManager implements IVaccinesManagerIn, IVaccinesManagerOut {
     Map<String, Integer> vaccinesMap;
     Semaphore semaphore;
 
-    VaccinesManager(){
+    VaccinesManager() {
         this.vaccinesMap = new HashMap<>();
-        this.semaphore = new Semaphore(1,true);
-    }
-
-    @Override
-    public Vaccine getVaccines(int vaccines){
-        Vaccine availableVaccines;
-        Map.Entry<String, Integer> maxVaccines = maxUsingIteration(vaccinesMap);
-
-        if(maxVaccines.getValue() >= vaccines){
-            availableVaccines = new Vaccine(maxVaccines.getKey(), vaccines);
-            vaccinesMap.replace(maxVaccines.getKey(), maxVaccines.getValue() - vaccines);
-        } else {
-            availableVaccines = new Vaccine(maxVaccines.getKey(), maxVaccines.getValue());
-            vaccinesMap.replace(maxVaccines.getKey(), 0);
-        }
-
-        return availableVaccines;
+        this.semaphore = new Semaphore(1, true);
     }
 
     private static <K, V extends Comparable<V>> Map.Entry<K, V> maxUsingIteration(Map<K, V> map) {
@@ -40,13 +23,29 @@ public class VaccinesManager implements IVaccinesManagerIn, IVaccinesManagerOut{
     }
 
     @Override
-    public Semaphore getSemaphore(){
+    public Vaccine getVaccines(int vaccines) {
+        Vaccine availableVaccines;
+        Map.Entry<String, Integer> maxVaccines = maxUsingIteration(vaccinesMap);
+
+        if (maxVaccines.getValue() >= vaccines) {
+            availableVaccines = new Vaccine(maxVaccines.getKey(), vaccines);
+            vaccinesMap.replace(maxVaccines.getKey(), maxVaccines.getValue() - vaccines);
+        } else {
+            availableVaccines = new Vaccine(maxVaccines.getKey(), maxVaccines.getValue());
+            vaccinesMap.replace(maxVaccines.getKey(), 0);
+        }
+
+        return availableVaccines;
+    }
+
+    @Override
+    public Semaphore getSemaphore() {
         return semaphore;
     }
 
     @Override
-    public boolean addVaccines(String line, int amount){
-        if(!vaccinesMap.containsKey(line))
+    public boolean addVaccines(String line, int amount) {
+        if (!vaccinesMap.containsKey(line))
             return false;
         vaccinesMap.replace(line, vaccinesMap.get(line) + amount);
         return true;

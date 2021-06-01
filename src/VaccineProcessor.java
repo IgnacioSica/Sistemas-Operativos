@@ -1,11 +1,11 @@
 import java.util.concurrent.Semaphore;
 
-public class VaccineProcessor implements Runnable{
-    private Vaccine vaccine;
-    private IVaccinesManagerIn vaccinesManagerIn;
-    private Semaphore semaphore;
+public class VaccineProcessor implements Runnable {
+    private final Vaccine vaccine;
+    private final IVaccinesManagerIn vaccinesManagerIn;
+    private final Semaphore semaphore;
 
-    VaccineProcessor(Vaccine vaccine, IVaccinesManagerIn vaccinesManagerIn){
+    VaccineProcessor(Vaccine vaccine, IVaccinesManagerIn vaccinesManagerIn) {
         this.vaccine = vaccine;
         this.vaccinesManagerIn = vaccinesManagerIn;
         this.semaphore = this.vaccinesManagerIn.getSemaphore();

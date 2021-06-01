@@ -1,38 +1,16 @@
 import java.util.concurrent.Semaphore;
 
 public class RequestProcessor implements Runnable {
-    private Request request;
-    private IRequestPlannerIn requestPlanner;
+    private final Request request;
+    private final IRequestPlannerIn requestPlanner;
     private Semaphore semaphore;
 
-    RequestProcessor(Request request, IRequestPlannerIn requestPlanner){
+    RequestProcessor(Request request, IRequestPlannerIn requestPlanner) {
         this.request = request;
         this.requestPlanner = requestPlanner;
     }
 
-    @Override
-    public void run() {
-        int score = calculateScore(this.request);
-        String scoreFormatted = String.format("%04d", score);
-
-        String key = scoreFormatted + this.request.id;
-        String line = getLine(request.age, request.occupation); // tipo de vacuna
-        Priority priority = getPriotity(request.age, request.occupation); // franja
-
-        request.updateRequest(key, line, priority);
-
-        this.semaphore = requestPlanner.getSemaphore(line);
-
-        try {
-            semaphore.acquire();
-            this.requestPlanner.addRequest(request, key, line, priority);
-            semaphore.release();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private static int calculateScore(Request request){
+    private static int calculateScore(Request request) {
         int age = request.age;
 
         double genderMultiplier = request.gender.equals("male") ? 1 : 0.93;
@@ -42,7 +20,7 @@ public class RequestProcessor implements Runnable {
         return (int) (age * genderMultiplier * medicalMultiplier);
     }
 
-    private static double getMedicalMultiplier(String medicalCondition){
+    private static double getMedicalMultiplier(String medicalCondition) {
         double multiplier;
         switch (medicalCondition) {
             case "Asma":
@@ -54,7 +32,7 @@ public class RequestProcessor implements Runnable {
             case "Obesidad":
                 multiplier = 1.31;
                 break;
-            case "Cancer  (general)" :
+            case "Cancer  (general)":
                 multiplier = 1.07;
                 break;
             case "Inmuno deficiencias":
@@ -79,11 +57,33 @@ public class RequestProcessor implements Runnable {
         return multiplier;
     }
 
-    private static String getLine(int age, String occupation){
+    private static String getLine(int age, String occupation) {
         return "pfizer"; //"sinovac"
     }
 
-    private static Priority getPriotity(int age, String occupation){
+    private static Priority getPriotity(int age, String occupation) {
         return Priority.highestPriority;
+    }
+
+    @Override
+    public void run() {
+        int score = calculateScore(this.request);
+        String scoreFormatted = String.format("%04d", score);
+
+        String key = scoreFormatted + this.request.id;
+        String line = getLine(request.age, request.occupation); // tipo de vacuna
+        Priority priority = getPriotity(request.age, request.occupation); // franja
+
+        request.updateRequest(key, line, priority);
+
+        this.semaphore = requestPlanner.getSemaphore(line);
+
+        try {
+            semaphore.acquire();
+            this.requestPlanner.addRequest(request, key, line, priority);
+            semaphore.release();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

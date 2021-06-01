@@ -4,8 +4,8 @@ import java.util.TreeMap;
 import java.util.concurrent.Semaphore;
 
 public class RequestPlanner implements IRequestPlannerIn, IRequestPlannerOut {
-    private HashMap<String, VaccineLine> vaccineLines;
-    private Map<String, Semaphore> semaphores;
+    private final HashMap<String, VaccineLine> vaccineLines;
+    private final Map<String, Semaphore> semaphores;
 
     public RequestPlanner() {
         vaccineLines = new HashMap<>();
@@ -13,23 +13,23 @@ public class RequestPlanner implements IRequestPlannerIn, IRequestPlannerOut {
     }
 
     @Override
-    public void addLine(String lineName){
+    public void addLine(String lineName) {
         VaccineLine line = new VaccineLine(lineName);
         vaccineLines.put(lineName, line);
-        Semaphore semLine = new Semaphore(1,true);
+        Semaphore semLine = new Semaphore(1, true);
         semaphores.put(lineName, semLine);
     }
 
     @Override
-    public Semaphore getSemaphore(String line){
+    public Semaphore getSemaphore(String line) {
         Semaphore semaphore = semaphores.get(line);
-        return semaphore != null ? semaphore : null;
+        return semaphore;
     }
 
     @Override
-    public boolean addRequest(Request request, String key, String lineName, Priority priority){
+    public boolean addRequest(Request request, String key, String lineName, Priority priority) {
         VaccineLine line = vaccineLines.get(lineName);
-        if(line == null)
+        if (line == null)
             return false;
         line.addRequest(request, key, priority);
         return true;
@@ -42,13 +42,13 @@ public class RequestPlanner implements IRequestPlannerIn, IRequestPlannerOut {
     }
 
     private class VaccineLine { // cola de solicitudes segun el tipo de vacuna
-        private Map<Priority, TreeMap<String, Request>> priorityMap;
         public String name;
+        private final Map<Priority, TreeMap<String, Request>> priorityMap;
 
         VaccineLine(String name) {
             this.name = name;
             this.priorityMap = new TreeMap<>();
-            for (Priority priority: Priority.values()) {
+            for (Priority priority : Priority.values()) {
                 TreeMap<String, Request> map = new TreeMap<>();
                 this.priorityMap.put(priority, map);
             }

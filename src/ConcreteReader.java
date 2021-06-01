@@ -4,12 +4,12 @@ import java.io.RandomAccessFile;
 import java.util.Scanner;
 import java.util.concurrent.Semaphore;
 
-public class ConcreteReader<T>{
+public class ConcreteReader<T> {
     protected String sourcePath;
     protected String moment;
     protected Semaphore semaphoreToRead;
 
-    ConcreteReader(String sourcePath, String moment, Semaphore semaphore){
+    ConcreteReader(String sourcePath, String moment, Semaphore semaphore) {
         this.sourcePath = sourcePath;
         this.moment = moment;
         this.semaphoreToRead = semaphore;
@@ -22,15 +22,15 @@ public class ConcreteReader<T>{
         String data = "";
         boolean deleteFirstLine = false;
 
-        if(scanner.hasNext())
+        if (scanner.hasNext())
             data = scanner.nextLine();
 
-        if(!data.isEmpty() && data.contains(moment))
+        if (!data.isEmpty() && data.contains(moment))
             deleteFirstLine = true;
 
         scanner.close();
 
-        if(deleteFirstLine)
+        if (deleteFirstLine)
             deleteFirstLine(sourcePath);
 
         this.semaphoreToRead.release();
@@ -59,7 +59,7 @@ public class ConcreteReader<T>{
         raf.close();
     }
 
-    protected T parseData(String data){
+    protected T parseData(String data) {
         throw new UnsupportedOperationException();
     }
 }

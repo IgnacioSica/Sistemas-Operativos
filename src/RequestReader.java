@@ -2,9 +2,9 @@ import java.io.IOException;
 import java.util.concurrent.Semaphore;
 
 public class RequestReader extends ConcreteReader<Request> implements Runnable {
-    private IRequestPlannerIn requestPlannerIn;
+    private final IRequestPlannerIn requestPlannerIn;
 
-    RequestReader(String source, String moment, Semaphore semaphore, IRequestPlannerIn requestPlannerIn){
+    RequestReader(String source, String moment, Semaphore semaphore, IRequestPlannerIn requestPlannerIn) {
         super(source, moment, semaphore);
 
         this.requestPlannerIn = requestPlannerIn;
@@ -12,10 +12,10 @@ public class RequestReader extends ConcreteReader<Request> implements Runnable {
 
     @Override
     public void run() {
-        while(true){
+        while (true) {
             try {
                 Request request = readRequest(sourcePath, moment);
-                if(request == null)
+                if (request == null)
                     break;
 
                 RequestProcessor requestProcessor = new RequestProcessor(request, requestPlannerIn);
@@ -35,7 +35,7 @@ public class RequestReader extends ConcreteReader<Request> implements Runnable {
     }
 
     @Override
-    protected Request parseData(String data){
+    protected Request parseData(String data) {
         return null;
     }
 }

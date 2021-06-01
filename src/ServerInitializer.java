@@ -2,12 +2,13 @@ import java.util.concurrent.Semaphore;
 
 public class ServerInitializer implements Runnable {
     private String moment;
-    private IVaccinesManagerIn vaccinesManagerIn;
-    private IRequestPlannerIn requestPlannerIn;
-    private String[] requestSources;
-    private Semaphore[] requestSemaphores;
-    private String[] vaccinesSources;
-    private Semaphore[] vaccinesSemaphores;
+    private final IVaccinesManagerIn vaccinesManagerIn;
+    private final IRequestPlannerIn requestPlannerIn;
+    private final String[] requestSources;
+    private final Semaphore[] requestSemaphores;
+    private final String[] vaccinesSources;
+    private final Semaphore[] vaccinesSemaphores;
+    private Moments moments;
 
     ServerInitializer(IRequestPlannerIn requestPlannerIn, IVaccinesManagerIn vaccinesManagerIn) {
         this.requestPlannerIn = requestPlannerIn;
@@ -24,15 +25,18 @@ public class ServerInitializer implements Runnable {
         this.moment = moment;
     }
 
+    public void setMoment(Moments moment) {
+        this.moments = moments;
+    }
+
     @Override
     public void run() {
         while (true) {
-            /*try {
-                //wait();
+            try {
+                moments.addThread();
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }*/
-
+            }
             for (int i = 0; i < requestSources.length; i++) {
                 for (int j = 0; j < 6; j++) {
                     RequestReader requestReader = new RequestReader(requestSources[i], moment, requestSemaphores[i], requestPlannerIn);
@@ -46,6 +50,7 @@ public class ServerInitializer implements Runnable {
                     new Thread(vaccineReader).start();
                 }
             }
+            moments.removeThread();
         }
     }
 }

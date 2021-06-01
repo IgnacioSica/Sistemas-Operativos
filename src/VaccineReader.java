@@ -1,13 +1,12 @@
 import java.io.IOException;
-import java.util.AbstractMap;
 import java.util.concurrent.Semaphore;
 
-public class VaccineReader extends ConcreteReader<Vaccine> implements Runnable{
+public class VaccineReader extends ConcreteReader<Vaccine> implements Runnable {
     private Vaccine vaccines;
-    private IVaccinesManagerIn vaccinesManagerIn;
+    private final IVaccinesManagerIn vaccinesManagerIn;
     private Semaphore semaphoreToWrite;
 
-    VaccineReader(String source, Semaphore semaphore, String moment, IVaccinesManagerIn vaccinesManagerIn){
+    VaccineReader(String source, Semaphore semaphore, String moment, IVaccinesManagerIn vaccinesManagerIn) {
         super(source, moment, semaphore);
 
         this.vaccinesManagerIn = vaccinesManagerIn;
@@ -34,7 +33,7 @@ public class VaccineReader extends ConcreteReader<Vaccine> implements Runnable{
     }
 
     @Override
-    protected Vaccine parseData(String data){
+    protected Vaccine parseData(String data) {
         return null;
     }
 }

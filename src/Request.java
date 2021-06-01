@@ -16,7 +16,7 @@ public class Request {
 
     //public Request()
 
-    public void updateRequest(String key, String line, Priority priority){
+    public void updateRequest(String key, String line, Priority priority) {
         this.key = key;
         this.line = line;
         this.priority = priority;

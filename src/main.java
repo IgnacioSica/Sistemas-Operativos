@@ -16,9 +16,13 @@ public class main {
 
         Moments moments = new Moments(schedulerInitializer, serverInitializer, vaccinationCenters);
 
+        schedulerInitializer.setMoment(moments);
+        serverInitializer.setMoment(moments);
+
+        new Thread(moments).start();
         new Thread(schedulerInitializer).start();
         new Thread(serverInitializer).start();
 
-        new Thread(moments).start();
+        //new Thread(moments).start();
     }
 }

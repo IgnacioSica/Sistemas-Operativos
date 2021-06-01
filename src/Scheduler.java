@@ -1,14 +1,14 @@
 import java.util.concurrent.Semaphore;
 
-public class Scheduler implements Runnable{
-    private IVaccinationCenter vaccinationCenter;
-    private String moment;
-    private IVaccinesManagerOut vaccinesManager;
+public class Scheduler implements Runnable {
+    private final IVaccinationCenter vaccinationCenter;
+    private final String moment;
+    private final IVaccinesManagerOut vaccinesManager;
     private Semaphore vaccinesSemaphore;
-    private IRequestPlannerOut requestPlanner;
+    private final IRequestPlannerOut requestPlanner;
     private Semaphore requestsSemaphore;
 
-    public Scheduler (IVaccinationCenter vaccinationCenter, String moment, IRequestPlannerOut requestPlanner, IVaccinesManagerOut vaccinesManager){
+    public Scheduler(IVaccinationCenter vaccinationCenter, String moment, IRequestPlannerOut requestPlanner, IVaccinesManagerOut vaccinesManager) {
         this.vaccinationCenter = vaccinationCenter;
         this.moment = moment;
         this.requestPlanner = requestPlanner;
@@ -19,12 +19,12 @@ public class Scheduler implements Runnable{
     public void run() {
         int availability = vaccinationCenter.getAvailability(moment);
         int vaccines = vaccinationCenter.getVaccines(moment);
-
         Vaccine availableVaccines = new Vaccine("", 0);
 
-        getVaccinesSemaphore();
+        if (!getVaccinesSemaphore())
+            return;
 
-        if(availability - vaccines > 0){
+        if (availability - vaccines > 0) {
             try {
                 this.vaccinesSemaphore.acquire();
                 availableVaccines = vaccinesManager.getVaccines(availability - vaccines);
@@ -36,7 +36,8 @@ public class Scheduler implements Runnable{
             return;
         }
 
-        getRequestsSemaphore(availableVaccines.getVaccineType());
+        if (!getRequestsSemaphore(availableVaccines.getVaccineType()))
+            return;
 
         vaccinationCenter.addVaccines(availableVaccines.getAmount(), moment);
 
@@ -47,7 +48,7 @@ public class Scheduler implements Runnable{
                 this.requestsSemaphore.release();
 
                 boolean state = this.vaccinationCenter.addRequest(request, moment);
-                if(state){
+                if (state) {
                     Notifier notifier = new Notifier(/*Request*/);
                     new Thread(notifier).start();
                 }
@@ -58,12 +59,12 @@ public class Scheduler implements Runnable{
     }
 
     private boolean getRequestsSemaphore(String line) {
-        this.vaccinesSemaphore = this.requestPlanner.getSemaphore(line);
-        return vaccinesSemaphore != null ? true : false;
+        this.requestsSemaphore = this.requestPlanner.getSemaphore(line);
+        return requestsSemaphore != null;
     }
 
     private boolean getVaccinesSemaphore() {
-        this.requestsSemaphore = this.vaccinesManager.getSemaphore();
-        return requestsSemaphore != null ? true : false;
+        this.vaccinesSemaphore = this.vaccinesManager.getSemaphore();
+        return vaccinesSemaphore != null;
     }
 }
