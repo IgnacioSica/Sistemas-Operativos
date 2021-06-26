@@ -1,8 +1,10 @@
 package Utils;
 
 public enum Occupation {
-    MEDICO_PRIMERA_LIENA("medico primera linea", Vaccine.PFIZER),
-    MEDICO_SEGUNDA_LIENA("medico segunda linea", Vaccine.PFIZER);
+    SALUD_PRIMERA_LIENA("Personal de salud - primera línea", Vaccine.PFIZER),
+    SALUD_SEGUNDA_LIENA("Personal de salud - segunda línea", Vaccine.PFIZER),
+    TRABAJADORES_ESCENCIALES("Trabajadores esenciales", Vaccine.PFIZER),
+    POBLACION_GENERAL("Poblacion general", null);
 
     private final String description;
     private final Vaccine vaccine;

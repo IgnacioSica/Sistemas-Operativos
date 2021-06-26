@@ -9,7 +9,7 @@ public interface IPlanner<T> {
 
     void addQueue(String queueType);
 
-    boolean addElement(String queueType, String key, T element, Priority priority);
+    boolean addElement(T element);
 
     T getElement(String queueType);
 }

@@ -2,6 +2,6 @@ package Utils;
 
 public enum Vaccine {
     PFIZER,
-    SINOVC,
+    SINOVAC,
     ASTRAZENECA;
 }

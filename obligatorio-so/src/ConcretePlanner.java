@@ -1,13 +1,13 @@
 import Interfaces.IPlanner;
+import Interfaces.IVaccinationRequest;
 import Utils.Priority;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.TreeMap;
 import java.util.concurrent.Semaphore;
 
-public class ConcretePlanner<T> implements IPlanner<T> {
+public class ConcretePlanner<T extends IVaccinationRequest> implements IPlanner<T> {
     protected final Map<String, ConcreteMLQ<T>> queues;
     protected final Map<String, Semaphore> semaphores;
 
@@ -16,8 +16,8 @@ public class ConcretePlanner<T> implements IPlanner<T> {
         this.semaphores = new HashMap<>();
     }
 
-    public Semaphore getSemaphore(String key) {
-        return semaphores.get(key);
+    public Semaphore getSemaphore(String queueKey) {
+        return semaphores.get(queueKey);
     }
 
     public void addQueue(String queueType) {
@@ -25,11 +25,11 @@ public class ConcretePlanner<T> implements IPlanner<T> {
         queues.put(queueType, queue);
     }
 
-    public boolean addElement(String queueType, String key, T element, Priority priority) {
-        ConcreteMLQ<T> queue = queues.get(queueType);
+    public boolean addElement(T element) {
+        ConcreteMLQ<T> queue = queues.get(element.getVaccine().name());
         if (Objects.isNull(queue))
             return false;
-        return queue.addElement(key, element, priority);
+        return queue.addElement(element);
     }
 
     public T getElement(String queueType) {
@@ -39,12 +39,12 @@ public class ConcretePlanner<T> implements IPlanner<T> {
         return queue.getHighestPriorityElement();
     }
 
-    private class ConcreteMLQ<T> {
-        private final String queueType;
+    private class ConcreteMLQ<T extends IVaccinationRequest> {
+        private final String queueKey;
         private final Map<Priority, TreeMap<String, T>> mlq;
 
         ConcreteMLQ(String queueType) {
-            this.queueType = queueType;
+            this.queueKey = queueType;
             this.mlq = new HashMap<>();
             for (Priority priority : Priority.values()) {
                 TreeMap<String, T> priorityQueue = new TreeMap<>();
@@ -62,11 +62,11 @@ public class ConcretePlanner<T> implements IPlanner<T> {
             return null;
         }
 
-        private boolean addElement(String key, T element, Priority priority) {
-            TreeMap<String, T> priorityQueue = mlq.get(priority);
+        private boolean addElement(T element) {
+            TreeMap<String, T> priorityQueue = mlq.get(element.getPriority());
             if (Objects.isNull(priorityQueue))
                 return false;
-            priorityQueue.put(key, element);
+            priorityQueue.put(element.getKey(), element);
             return true;
         }
     }

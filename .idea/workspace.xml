@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1007b8dd-cec4-4103-bdff-071d5ef76d55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so-final/src/Moments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so-final/src/Utils/Source.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so-final/src/VaccinationRequestReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so-final/src/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/ConcretePlanner$ConcreteMLQ.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/ConcretePlanner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/Interfaces/IPlanner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/Interfaces/IVaccinationRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/Utils/Gender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/Utils/MedicalCondition.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/Utils/Occupation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/Utils/Priority.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/Utils/State.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/Utils/Vaccine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/VaccinationRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/VaccinationRequestProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/out/production/obligatorio-so/main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/src/Interfaces/IVaccinationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obligatorio-so/src/VaccinationCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-so/src/ConcretePlanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/obligatorio-so/src/ConcretePlanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-so/src/Interfaces/IPlanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/obligatorio-so/src/Interfaces/IPlanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-so/src/Utils/Occupation.java" beforeDir="false" afterPath="$PROJECT_DIR$/obligatorio-so/src/Utils/Occupation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-so/src/Utils/Vaccine.java" beforeDir="false" afterPath="$PROJECT_DIR$/obligatorio-so/src/Utils/Vaccine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-so/src/VaccinationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/obligatorio-so/src/VaccinationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-so/src/VaccinationRequestProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/obligatorio-so/src/VaccinationRequestProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obligatorio-so/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/obligatorio-so/src/main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1uV7yAJXxrPZSVYeSD7Hr3hFB4D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1007b8dd-cec4-4103-bdff-071d5ef76d55" name="Default Changelist" comment="" />
+      <created>1624739155839</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624739155839</updated>
+      <workItem from="1624739157040" duration="1184000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

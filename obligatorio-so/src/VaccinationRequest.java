@@ -1,6 +1,7 @@
+import Interfaces.IVaccinationRequest;
 import Utils.*;
 
-public class VaccinationRequest {
+public class VaccinationRequest implements IVaccinationRequest {
     public String id;
     public Gender gender;
     public int age;
@@ -18,14 +19,34 @@ public class VaccinationRequest {
         this.gender = gender;
         this.age = age;
         this.occupation = occupation;
-        this.vaccine = occupation.getVaccine();
+        this.vaccine = occupation.getVaccine() != null ? occupation.getVaccine() : getVaccineByAge(age);
         this.medicalCondition = medicalCondition;
         this.state = State.PENDING;
     }
 
-    public void updateRequest(String key, Vaccine vaccine, Priority priority) {
+    private Vaccine getVaccineByAge(int age) {
+        if(age >= 80)
+            return Vaccine.PFIZER;
+        return Vaccine.SINOVAC;
+    }
+
+    public void updateRequest(String key, Priority priority) {
         this.key = key;
-        //this.vaccine = vaccine;
         this.priority = priority;
+    }
+
+    @Override
+    public String getKey() {
+        return this.key;
+    }
+
+    @Override
+    public Vaccine getVaccine() {
+        return this.vaccine;
+    }
+
+    @Override
+    public Priority getPriority() {
+        return this.priority;
     }
 }
