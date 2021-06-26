@@ -13,6 +13,7 @@ public enum Occupation {
         this.description = description;
         this.vaccine = vaccine;
     }
+
     public String getDescription(){
         return description;
     }
