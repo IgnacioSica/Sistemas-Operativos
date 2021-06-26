@@ -7,10 +7,12 @@ public class Moments implements Runnable{
     private int running;
     private int moment;
     private int max;
+    private RequestPlanner rPlanner;
 
-    public Moments(int max){
+    public Moments(int max, RequestPlanner rPlanner){
         this.max = max;
         moment = 1;
+        this.rPlanner = rPlanner;
     }
 
     public synchronized void finish(){
@@ -23,7 +25,7 @@ public class Moments implements Runnable{
             System.out.println(moment);
             for (Source s : Source.values()) {
                 int lines = new Random().nextInt(10) + 1;
-                VaccinationRequestReader reader = new VaccinationRequestReader(this, s, lines);
+                VaccinationRequestReader reader = new VaccinationRequestReader(this, s, lines, rPlanner);
                 running++;
                 new Thread(reader).start();
             }
