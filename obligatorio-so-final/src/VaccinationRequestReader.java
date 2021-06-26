@@ -70,7 +70,6 @@ public class VaccinationRequestReader extends Thread {
     public void run() {
         System.out.println("Reader: " + this.source.name() + " started in line " + this.source.getCurrentLine());
         try {
-            //por que hacemos esto?
             TimeUnit.MILLISECONDS.sleep(random());
         } catch (InterruptedException e) {
             e.printStackTrace();
