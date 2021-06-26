@@ -1,5 +1,8 @@
 import Utils.Source;
 
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
 public class Moments implements Runnable{
     private int running;
     private int moment;
@@ -19,18 +22,26 @@ public class Moments implements Runnable{
         while(moment <= max){
             System.out.println(moment);
             for (Source s : Source.values()) {
-                VaccinationRequestReader reader = new VaccinationRequestReader(s.name(),this, s);
+                int lines = new Random().nextInt(10) + 1;
+                VaccinationRequestReader reader = new VaccinationRequestReader(this, s, lines);
                 running++;
-                new Thread(reader).run();
+                new Thread(reader).start();
             }
 
-            //TODO START READERS
-
             if(moment % 24 == 0){
+
+                //running++;
                 //TODO START SCHEDULER INITIALIZER
             }
 
-            while(running > 0){}
+            while(running > 0){
+                try {
+                    TimeUnit.MILLISECONDS.sleep(200);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            //System.out.println(running);
             moment++;
         }
     }
