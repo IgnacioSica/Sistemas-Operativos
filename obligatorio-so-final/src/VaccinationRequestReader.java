@@ -1,10 +1,5 @@
 import Utils.Source;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.util.Random;
-import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
 public class VaccinationRequestReader extends Thread {
@@ -13,7 +8,7 @@ public class VaccinationRequestReader extends Thread {
     private int lines;
     //private RequestPlanner planner;
 
-    public VaccinationRequestReader(Moments moments, Source source, int lines/*, RequestPlanner planner, int n*/){
+    public VaccinationRequestReader(Moments moments, Source source, int lines/*, RequestPlanner planner*/){
         this.source = source;
         this.moments = moments;
         this.lines = lines;
