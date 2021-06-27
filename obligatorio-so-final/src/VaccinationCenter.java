@@ -24,13 +24,13 @@ public enum VaccinationCenter {
     public void scheduleByMoment(int moment){
         //We add the value if it's not present on the map
         availabilityMap.putIfAbsent(moment, initialAvailability);
-        availabilityMap.putIfAbsent(moment + 28, initialAvailability);
+        availabilityMap.putIfAbsent(moment + 28 * 24, initialAvailability);
         
         //We update the values
         int newValueDosis1 = availabilityMap.get(moment) - 1;
-        int newValueDosis2 = availabilityMap.get(moment + 28) - 1;
+        int newValueDosis2 = availabilityMap.get(moment + (28 * 24)) - 1;
         availabilityMap.put(moment, newValueDosis1);
-        availabilityMap.put(moment + 28, newValueDosis2);
+        availabilityMap.put(moment + (28 * 24), newValueDosis2);
     }
 
     public void finishDay(int moment){
