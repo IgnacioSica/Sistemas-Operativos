@@ -11,7 +11,7 @@ public class Notifier extends Thread{
         {
             fileWriter = new FileWriter("src/Usuarios agendados.txt", true);
             pw = new PrintWriter(fileWriter);
-            pw.println("usuario: " + requestId + ", centro: "+ centerId + ", dosis: ");
+            pw.println("usuario: " + requestId + ", centro: "+ centerId);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
