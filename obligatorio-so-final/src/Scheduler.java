@@ -25,35 +25,24 @@ public class Scheduler extends Thread {
 
         Semaphore vaccineSem = vPlanner.semaphore;
         Semaphore requestSem = rPlanner.semaphore;
-
-        for (int i = 0; i < vaccinationCenter.getAvailability(); i++) {
+        var availability = true;
+        while(vaccinationCenter.getAvailabilityByMoment(moments.getMoment()) > 0 && availability) {
             try {
                 vaccineSem.acquire();
                 requestSem.acquire();
                 if (!rPlanner.isEmpty() && vPlanner.availability()) {
                     Request request;
-                    vPlanner.extractVaccine();
-                    if(vaccinationCenter.second_doses.get(moments.getMoment()).isEmpty()){
+                    vPlanner.extractVaccines();
                         request = rPlanner.extractRequestByPriority();
-                        new Notifier(request, vaccinationCenter.name(), "primera dosis").run();
-                        vaccinationCenter.second_doses.get(moments.getMoment() + 72).add(request);
-                    } else {
-                        request = vaccinationCenter.second_doses.get(moments.getMoment()).remove(0);
-                        new Notifier(request, vaccinationCenter.name(), "segunda dosis").run();
-                    }
+                        new Notifier(request, vaccinationCenter.name()).run();
+    
                     if(Objects.isNull(request)){
-                        vPlanner.addVaccines(1);
+                        vPlanner.addVaccines(2);
+                    } else{
+                        vaccinationCenter.scheduleByMoment(moments.getMoment());
                     }
-                }
-                if (vPlanner.availability()) {
-                    Request request;
-                    vPlanner.extractVaccine();
-                    if(!vaccinationCenter.second_doses.get(moments.getMoment()).isEmpty()){
-                        request = vaccinationCenter.second_doses.get(moments.getMoment()).remove(0);
-                        new Notifier(request, vaccinationCenter.name(), "segunda dosis").run();
-                    } else {
-                        vPlanner.addVaccines(1);
-                    }
+                } else {
+                    availability = false;
                 }
                 vaccineSem.release();
                 requestSem.release();
@@ -62,6 +51,7 @@ public class Scheduler extends Thread {
             }
 
         }
+        vaccinationCenter.finishDay(moments.getMoment());
         System.out.println("    Scheduler for " + vaccinationCenter + " finished");
         this.moments.ProcessFinished();
     }

@@ -13,10 +13,10 @@ public class VaccinePlanner {
     }
 
     boolean availability() {
-        return vaccineCount > 0;
+        return vaccineCount > 1;
     }
 
-    void extractVaccine() {
-        vaccineCount--;
+    void extractVaccines() {
+        vaccineCount -= 2;
     }
 }

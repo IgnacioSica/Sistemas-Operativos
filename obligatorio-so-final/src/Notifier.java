@@ -3,7 +3,7 @@ import java.io.PrintWriter;
 
 public class Notifier extends Thread{
 
-    private void writeNotification(String requestId, String centerId, String dosis)
+    private void writeNotification(String requestId, String centerId)
     {
         FileWriter fileWriter = null;
         PrintWriter pw = null;
@@ -11,7 +11,7 @@ public class Notifier extends Thread{
         {
             fileWriter = new FileWriter("src/Usuarios agendados.txt", true);
             pw = new PrintWriter(fileWriter);
-            pw.println("usuario: " + requestId + ", centro: "+ centerId + ", dosis: " + dosis);
+            pw.println("usuario: " + requestId + ", centro: "+ centerId + ", dosis: ");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -26,20 +26,18 @@ public class Notifier extends Thread{
         }
     }
 
-    Notifier(Request request, String centerName, String dosis){
+    Notifier(Request request, String centerName){
         this.request = request;
         this.centerName = centerName;
-        this.dosis = dosis;
     }
     Request request;
     String centerName;
-    String dosis;
 
     @Override
     public void run(){
         try{
-            writeNotification(request.cedula, centerName, dosis);
-            System.out.println("            Se agendo la vacunacion del usuario " + request.cedula + " en el " + centerName + " en el nivel " + request.priorityLevel + " con un puntaje de " + request.priorityScore + " "+ dosis);
+            writeNotification(request.cedula, centerName);
+            System.out.println("            Se agendo la vacunacion del usuario " + request.cedula + " en el " + centerName + " en el nivel " + request.priorityLevel + " con un puntaje de " + request.priorityScore);
         }catch(Exception e){
 
         }

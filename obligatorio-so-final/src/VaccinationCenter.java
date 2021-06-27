@@ -1,6 +1,4 @@
 import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
 
 public enum VaccinationCenter {
@@ -11,17 +9,33 @@ public enum VaccinationCenter {
     Center_E(8),
     Center_F(9);
 
-    private final int availability;
-    public final Map<Integer, List<Request>> second_doses = new HashMap<>();
+    public final int initialAvailability;
+    public final Map<Integer, Integer> availabilityMap = new HashMap<>();
 
-    private VaccinationCenter(int availability) {
-        this.availability = availability;
-        for (int i = 0; i < 180; i++) {
-            second_doses.put(i, new LinkedList<>());
-        }
+    private VaccinationCenter(int initialAvailability) {
+        this.initialAvailability = initialAvailability;
     }
 
-    public int getAvailability() {
-        return availability;
+    public int getAvailabilityByMoment(int moment){
+        availabilityMap.putIfAbsent(moment, initialAvailability);
+        return availabilityMap.get(moment);
     }
+
+    public void scheduleByMoment(int moment){
+        //We add the value if it's not present on the map
+        availabilityMap.putIfAbsent(moment, initialAvailability);
+        availabilityMap.putIfAbsent(moment + 28, initialAvailability);
+        
+        //We update the values
+        int newValueDosis1 = availabilityMap.get(moment) - 1;
+        int newValueDosis2 = availabilityMap.get(moment + 28) - 1;
+        availabilityMap.put(moment, newValueDosis1);
+        availabilityMap.put(moment + 28, newValueDosis2);
+    }
+
+    public void finishDay(int moment){
+        //When a day finishes we delete the entry from the map because we won't need it anymore
+        availabilityMap.remove(moment);
+    }
+
 }
