@@ -8,47 +8,47 @@ public class VaccinesReader extends Thread {
     private int lineIndex;
     private VaccinePlanner planner;
 
-    public VaccinesReader(Moments moments, int lineIndex, VaccinePlanner planner){
+    public VaccinesReader(Moments moments, int lineIndex, VaccinePlanner planner) {
         this.moments = moments;
         this.lineIndex = lineIndex;
         this.planner = planner;
     }
 
-    private void loadRequests(){
+    private void loadRequests() {
         File archivo = null;
         FileReader fr = null;
         BufferedReader br = null;
 
-        try{
-            archivo = new File("/Users/fmehues/Desktop/fede/Sistemas-Operativos/obligatorio-so-final/src/Vacunas.txt");
+        try {
+            archivo = new File("src/Vacunas.txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
 
             // Read file
             String linea;
             int lineNumber = 0;
-            while((linea=br.readLine())!=null && lineNumber <= lineIndex){
-               if(lineNumber == lineIndex){
-                  VaccineManager manager = new VaccineManager(linea, planner);
-                  manager.run();
-               }
-               lineNumber++;
+            while ((linea = br.readLine()) != null && lineNumber <= lineIndex) {
+                if (lineNumber == lineIndex) {
+                    VaccineManager manager = new VaccineManager(linea, planner);
+                    manager.run();
+                }
+                lineNumber++;
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally{
+        } finally {
             // Close file
-            try{
-                if( null != fr ){
+            try {
+                if (null != fr) {
                     fr.close();
                 }
-            }catch (Exception e2){
+            } catch (Exception e2) {
                 e2.printStackTrace();
             }
         }
     }
 
-    private int random(){
+    private int random() {
         int rand = (int) (Math.random() * 200);
 
         return (rand);
@@ -62,7 +62,7 @@ public class VaccinesReader extends Thread {
             e.printStackTrace();
         }
         loadRequests();
-        System.out.println("Reader: Vaccines at line "+ lineIndex + " added");
-        moments.finish();
+        System.out.println("    Reader: Vaccines at line " + lineIndex + " added");
+        moments.ProcessFinished();
     }
 }

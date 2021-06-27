@@ -1,8 +1,7 @@
-import Utils.Source;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class VaccinationRequestReader extends Thread {
@@ -11,71 +10,70 @@ public class VaccinationRequestReader extends Thread {
     private int lines;
     private RequestPlanner planner;
 
-    public VaccinationRequestReader(Moments moments, Source source, int lines, RequestPlanner planner){
+    public VaccinationRequestReader(Moments moments, Source source, int lines, RequestPlanner planner) {
         this.source = source;
         this.moments = moments;
         this.lines = lines;
         this.planner = planner;
     }
 
-    private void loadRequests(){
+    private void loadRequests() {
         File archivo = null;
         FileReader fr = null;
         BufferedReader br = null;
 
-        try{
+        try {
             //Esto es solo para testear
-            if(source != Source.input_wpp){
+            if (source != Source.input_wpp) {
                 TimeUnit.MILLISECONDS.sleep(random());
                 source.addLines(lines);
                 return;
             }
-            archivo = new File("/Users/fmehues/Desktop/fede/Sistemas-Operativos/obligatorio-so-final/src/Solicitudes de agenda " + source.name() + ".txt");
+            archivo = new File("src/Solicitudes de agenda " + source.name() + ".txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
 
             // Read file
             String linea;
             int lineNumber = 0;
-            while((linea=br.readLine())!=null && lineNumber < source.getCurrentLine()){
+            while ((linea = br.readLine()) != null && lineNumber < source.getCurrentLine()) {
                 lineNumber++;
             }
             int maxLine = source.getCurrentLine() + lines;
-            while((linea=br.readLine())!=null && source.getCurrentLine() < maxLine){
+            while ((linea = br.readLine()) != null && source.getCurrentLine() < maxLine) {
                 RequestManager manager = new RequestManager(linea, planner);
                 manager.run();
-                source.addLines(1);;
+                source.addLines(1);
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally{
+        } finally {
             // Close file
-            try{
-                if( null != fr ){
+            try {
+                if (null != fr) {
                     fr.close();
                 }
-            }catch (Exception e2){
+            } catch (Exception e2) {
                 e2.printStackTrace();
             }
         }
     }
 
-    private int random(){
-        int rand = (int) (Math.random() * 200);
+    private int random() {
+        int rand = new Random().nextInt(moments.timeout);
 
         return (rand);
     }
 
-    @Override
     public void run() {
-        System.out.println("Reader: " + this.source.name() + " started in line " + this.source.getCurrentLine());
+        System.out.println("    Reader: " + this.source.name() + " started in line " + this.source.getCurrentLine());
         try {
             TimeUnit.MILLISECONDS.sleep(random());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         loadRequests();
-        System.out.println("Reader: " + this.source.name() + " finished before line "+ (this.source.getCurrentLine()));
-        moments.finish();
+        System.out.println("    Reader: " + this.source.name() + " finished before line " + this.source.getCurrentLine());
+        moments.ProcessFinished();
     }
 }

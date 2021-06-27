@@ -1,5 +1,3 @@
-package Utils;
-
 public enum Source {
     input_wpp,
     input_app,
@@ -7,7 +5,7 @@ public enum Source {
 
     private int currentLine;
 
-    private Source(){
+    private Source() {
         currentLine = 0;
     }
 
@@ -15,7 +13,7 @@ public enum Source {
         return currentLine;
     }
 
-    public void addLines(int line){
+    public void addLines(int line) {
         this.currentLine += line;
     }
 }
