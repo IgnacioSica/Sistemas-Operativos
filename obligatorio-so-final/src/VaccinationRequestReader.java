@@ -26,7 +26,6 @@ public class VaccinationRequestReader extends Thread {
             //Esto es solo para testear
             if (source != Source.input_wpp) {
                 TimeUnit.MILLISECONDS.sleep(random());
-                source.addLines(lines);
                 return;
             }
             archivo = new File("src/Solicitudes de agenda " + source.name() + ".txt");
@@ -66,14 +65,16 @@ public class VaccinationRequestReader extends Thread {
     }
 
     public void run() {
-        System.out.println("    Reader: " + this.source.name() + " started in line " + this.source.getCurrentLine());
+        System.out.println("    Comenzando a leer " + this.source.name());
+        int solicitudesInicial = this.source.getCurrentLine();
         try {
             TimeUnit.MILLISECONDS.sleep(random());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         loadRequests();
-        System.out.println("    Reader: " + this.source.name() + " finished before line " + this.source.getCurrentLine());
+        int solicitudesCargadas = this.source.getCurrentLine() - solicitudesInicial;
+        System.out.println("    Se cargaron  " + solicitudesCargadas + " solicitudes de " +this.source.name());
         moments.ProcessFinished();
     }
 }

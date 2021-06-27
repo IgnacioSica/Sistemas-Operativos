@@ -62,7 +62,7 @@ public class VaccinesReader extends Thread {
             e.printStackTrace();
         }
         loadRequests();
-        System.out.println("    Reader: Vaccines at line " + lineIndex + " added");
+        System.out.println("    Se cargo el lote de vacunas " + lineIndex);
         moments.ProcessFinished();
     }
 }
