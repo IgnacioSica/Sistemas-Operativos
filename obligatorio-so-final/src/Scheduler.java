@@ -35,28 +35,25 @@ public class Scheduler extends Thread {
                     vPlanner.extractVaccine();
                     if(vaccinationCenter.second_doses.get(moments.getMoment()).isEmpty()){
                         request = rPlanner.extractRequestByPriority();
-                        System.out.println("            Se agendo la vacunacion del usuario " + request.cedula + " en el " + vaccinationCenter.name() + " en el nivel " + request.priorityLevel + " con un puntaje de " + request.priorityScore + " primera dosis");
+                        new Notifier(request, vaccinationCenter.name(), "primera dosis").run();
                         vaccinationCenter.second_doses.get(moments.getMoment() + 72).add(request);
                     } else {
                         request = vaccinationCenter.second_doses.get(moments.getMoment()).remove(0);
-                        System.out.println("            Se agendo la vacunacion del usuario " + request.cedula + " en el " + vaccinationCenter.name() + " en el nivel " + request.priorityLevel + " con un puntaje de " + request.priorityScore + " segunda dosis");
+                        new Notifier(request, vaccinationCenter.name(), "segunda dosis").run();
                     }
                     if(Objects.isNull(request)){
                         vPlanner.addVaccines(1);
                     }
-
-                    //new Notifier(request, vaccinationCenter.name(), notificationWriterSem).run();
                 }
                 if (vPlanner.availability()) {
                     Request request;
                     vPlanner.extractVaccine();
                     if(!vaccinationCenter.second_doses.get(moments.getMoment()).isEmpty()){
                         request = vaccinationCenter.second_doses.get(moments.getMoment()).remove(0);
-                        System.out.println("            Se agendo la vacunacion del usuario " + request.cedula + " en el " + vaccinationCenter.name() + " en el nivel " + request.priorityLevel + " con un puntaje de " + request.priorityScore + " segunda dosis");
+                        new Notifier(request, vaccinationCenter.name(), "segunda dosis").run();
                     } else {
                         vPlanner.addVaccines(1);
                     }
-                    //new Notifier(request, vaccinationCenter.name(), notificationWriterSem).run();
                 }
                 vaccineSem.release();
                 requestSem.release();
