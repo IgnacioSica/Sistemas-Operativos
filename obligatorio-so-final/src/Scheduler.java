@@ -34,11 +34,10 @@ public class Scheduler extends Thread {
                     Request request;
                     vPlanner.extractVaccines();
                         request = rPlanner.extractRequestByPriority();
-                        new Notifier(request, vaccinationCenter.name()).run();
-    
                     if(Objects.isNull(request)){
                         vPlanner.addVaccines(2);
                     } else{
+                        new Notifier(request, vaccinationCenter.name()).run();
                         vaccinationCenter.scheduleByMoment(moments.getMoment());
                     }
                 } else {

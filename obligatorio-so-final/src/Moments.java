@@ -33,8 +33,6 @@ public class Moments implements Runnable {
     public void run() {
         int[] momentsWithVaccineArrival = {1, new Random().nextInt(100) + 1};
         while (moment <= max) {
-            //rPlanner.printByLevel();
-
             System.out.println("Current moment: " + moment);
             for (var i = 0; i < momentsWithVaccineArrival.length; i++) {
                 if (moment == momentsWithVaccineArrival[i]) {
@@ -44,7 +42,7 @@ public class Moments implements Runnable {
                 }
             }
             for (Source s : Source.values()) {
-                int lines = new Random().nextInt(10) + 1;
+                int lines = new Random().nextInt(3) + 1;
                 VaccinationRequestReader reader = new VaccinationRequestReader(this, s, lines, rPlanner);
                 this.newProcessStarted();
                 new Thread(reader).start();

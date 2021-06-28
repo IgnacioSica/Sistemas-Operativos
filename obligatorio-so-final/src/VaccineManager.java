@@ -12,7 +12,7 @@ public class VaccineManager extends Thread {
             int vaccinesAmount = Integer.parseInt(vaccineData);
             planner.semaphore.acquire();
             planner.addVaccines(vaccinesAmount);
-            System.out.println("        added " + vaccinesAmount + " vaccines.");
+            System.out.println("        " + vaccinesAmount + " vacunas agregadas.");
             planner.semaphore.release();
         } catch (Exception e) {
             System.out.println("        VaccineManager error");

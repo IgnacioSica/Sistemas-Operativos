@@ -23,12 +23,7 @@ public class VaccinationRequestReader extends Thread {
         BufferedReader br = null;
 
         try {
-            //Esto es solo para testear
-            if (source != Source.input_wpp) {
-                TimeUnit.MILLISECONDS.sleep(random());
-                return;
-            }
-            archivo = new File("src/Solicitudes de agenda " + source.name() + ".txt");
+            archivo = new File("src/" + source.name() + ".txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
 

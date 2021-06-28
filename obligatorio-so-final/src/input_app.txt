@@ -1,0 +1,318 @@
+115-86-7015,Marchall,Iacabucci,Male,28,Durazno,trabajador no escenciales o estudiante,n/a,centro E,centro D,centro D,false
+832-60-1271,Milo,Swateridge,Male,70,Montevideo,jubilado,Diabetes,centro C,centro D,centro D,false
+567-45-8339,Jasmina,Molfino,Male,18,Paysandú,trabajador no escenciales o estudiante,n/a,centro B,centro C,centro D,false
+613-65-5196,Yuri,Andover,Female,76,Montevideo,jubilado,Hypertension,centro E,centro E,centro B,false
+243-71-5752,Arlen,Boustead,Male,42,Montevideo,trabajador escenciales,n/a,centro A,centro A,centro B,false
+303-30-4829,Harlie,Rudwell,Female,49,Canelones,trabajador escenciales,Hypertension,centro A,centro B,centro C,false
+523-17-4111,Madalena,Ferrar,Male,18,Montevideo,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro C,centro B,centro C,true
+811-20-4617,Bliss,Eskriett,Female,39,Rivera,trabajador no escenciales o estudiante,n/a,centro C,centro B,centro D,false
+254-19-1556,Jaime,Rummer,Female,70,Montevideo,jubilado,n/a,centro C,centro D,centro C,false
+656-89-8967,Sunny,Inglesent,Male,91,Montevideo,jubilado,Enfermedad crónica Hepática,centro C,centro C,centro D,false
+126-46-2916,Augustine,Martinets,Male,40,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro A,centro B,false
+678-50-0844,Tracey,Wildman,Male,61,Montevideo,trabajador no escenciales o estudiante,n/a,centro D,centro E,centro B,false
+635-89-4700,Kass,Rozenzweig,Male,42,Montevideo,trabajador no escenciales o estudiante,n/a,centro A,centro A,centro D,false
+265-38-1662,Marjie,Dowthwaite,Male,37,Montevideo,trabajador no escenciales o estudiante,Asma,centro A,centro A,centro A,false
+629-63-5613,Cahra,Tanman,Male,73,Montevideo,jubilado,n/a,centro D,centro D,centro B,false
+693-65-6250,Johann,Brockest,Male,39,Tacuarembó,trabajador no escenciales o estudiante,n/a,centro D,centro A,centro E,false
+729-30-6815,Krystalle,Collis,Female,64,Maldonado,trabajador no escenciales o estudiante,Hypertension,centro A,centro B,centro C,false
+294-51-6320,Reece,Esslemont,Male,35,Soriano,trabajador no escenciales o estudiante,n/a,centro D,centro A,centro B,false
+127-10-2378,Chev,Corteney,Male,62,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro A,centro C,false
+594-63-0520,Dorey,Cradey,Female,58,Montevideo,trabajador no escenciales o estudiante,n/a,centro C,centro E,centro E,false
+104-26-3894,Cass,Florez,Female,95,Montevideo,jubilado,Hypertension,centro E,centro C,centro C,false
+488-98-1498,Griffith,Tafani,Female,36,Montevideo,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro E,centro C,centro B,false
+216-41-8508,Reamonn,Shields,Male,66,Montevideo,jubilado,n/a,centro D,centro D,centro D,false
+633-66-2808,Wylma,Revelle,Male,77,Colonia,jubilado,n/a,s/p,s/p,s/p,false
+676-33-4005,Glory,Orris,Male,18,Montevideo,trabajador no escenciales o estudiante,n/a,centro A,centro E,centro D,false
+721-09-4452,Grover,Vel,Male,32,Montevideo,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro B,centro C,centro E,false
+746-12-8874,Lockwood,Lauxmann,Male,53,Soriano,trabajador no escenciales o estudiante,n/a,centro A,centro D,centro C,false
+522-28-9482,Georgeanna,Fonzo,Male,42,Tacuarembó,trabajador no escenciales o estudiante,n/a,centro C,centro A,centro D,false
+627-31-0845,Rodina,Balazs,Female,31,Montevideo,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro C,centro E,centro C,false
+318-70-4870,Louisa,Redington,Female,42,Montevideo,personal de la salud(primera línea),n/a,centro A,centro C,centro B,false
+419-99-1221,Jude,Warkup,Female,45,Montevideo,trabajador no escenciales o estudiante,n/a,s/p,s/p,s/p,false
+538-49-5261,Verina,Deerness,Female,43,Montevideo,trabajador no escenciales o estudiante,n/a,centro C,centro C,centro B,false
+314-70-1756,Sascha,Murrill,Male,51,Colonia,trabajador no escenciales o estudiante,n/a,centro D,centro B,centro A,false
+490-14-2455,Culver,Yakuntsov,Male,78,Salto,jubilado,n/a,centro B,centro B,centro D,false
+673-54-1370,Sunny,Blowick,Male,51,Montevideo,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro C,centro C,centro D,false
+598-84-4718,Alexina,Bellini,Male,45,Canelones,trabajador no escenciales o estudiante,Hypertension,centro E,centro E,centro D,false
+533-54-9491,Jojo,Durtnell,Female,24,Canelones,trabajador no escenciales o estudiante,Hypertension,centro E,centro A,centro D,false
+873-18-1282,Lorianna,McKibbin,Male,45,Montevideo,trabajador no escenciales o estudiante,n/a,centro A,centro E,centro D,false
+689-46-3217,Rita,Baldetti,Male,41,Rivera,trabajador escenciales,n/a,s/p,s/p,s/p,false
+489-40-4442,Ewart,Tooher,Female,57,Cerro Largo,trabajador no escenciales o estudiante,n/a,centro B,centro E,centro C,false
+274-11-8332,Rusty,Briscoe,Female,32,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro B,centro E,false
+296-24-1313,Jacqui,Jennick,Male,28,Tacuarembó,trabajador no escenciales o estudiante,n/a,centro D,centro E,centro E,false
+462-70-8856,Abraham,Allicock,Female,49,Canelones,trabajador no escenciales o estudiante,n/a,centro A,centro E,centro E,true
+462-73-5012,Omar,Dougher,Female,40,Canelones,trabajador escenciales,Obesidad,centro A,centro A,centro C,true
+386-02-0170,Corrinne,Losty,Female,38,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro C,centro D,false
+523-51-7304,Abbe,Guilfoyle,Female,22,Paysandú,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro E,centro B,centro D,true
+296-17-2850,Nanci,Tackell,Male,85,Tacuarembó,jubilado,n/a,centro A,centro A,centro E,false
+630-38-6476,Garnette,Enrico,Female,53,Soriano,trabajador no escenciales o estudiante,n/a,centro B,centro C,centro D,false
+603-75-4923,Mirilla,Fritter,Male,41,Colonia,trabajador no escenciales o estudiante,n/a,centro A,centro D,centro A,false
+357-96-1235,Emma,Cratchley,Male,25,Montevideo,trabajador escenciales,Asma,centro D,centro B,centro D,false
+252-73-0356,Vin,Greenin,Female,25,Río Negro,trabajador escenciales,n/a,s/p,s/p,s/p,false
+218-90-6785,Fons,Tampling,Female,77,Montevideo,jubilado,n/a,centro D,centro C,centro D,false
+789-21-7578,Ara,Swiers,Female,47,Artigas,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro B,centro C,centro B,false
+556-60-7376,Vally,Primak,Female,18,Montevideo,trabajador escenciales,n/a,centro C,centro A,centro C,false
+217-34-7808,Stephi,Billie,Female,60,Paysandú,trabajador no escenciales o estudiante,n/a,centro A,centro D,centro E,false
+299-41-7119,Dexter,Agge,Female,58,Montevideo,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro B,centro C,centro C,false
+313-68-9889,Andros,Clementi,Male,51,Rocha,trabajador no escenciales o estudiante,Hypertension,centro E,centro B,centro E,false
+585-14-6255,Maggie,Farren,Female,22,Canelones,trabajador no escenciales o estudiante,n/a,centro A,centro B,centro E,false
+703-64-2496,Lorri,McMonies,Male,46,Canelones,trabajador no escenciales o estudiante,Hypertension,centro C,centro C,centro C,false
+871-35-9818,Aleen,Pally,Male,37,Durazno,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro C,centro C,centro A,false
+875-47-2668,Randy,Lindenbaum,Female,30,Cerro Largo,trabajador no escenciales o estudiante,n/a,centro A,centro E,centro C,false
+739-81-1021,Lamar,Blower,Female,27,Canelones,trabajador no escenciales o estudiante,n/a,centro D,centro A,centro A,false
+763-52-8965,Gerardo,Hakeworth,Female,20,Canelones,trabajador no escenciales o estudiante,Obesidad,centro D,centro C,centro C,false
+122-45-4812,Finn,Essam,Male,25,Montevideo,trabajador no escenciales o estudiante,Obesidad,centro B,centro B,centro B,false
+217-67-3535,Malcolm,Blackborough,Male,32,Montevideo,trabajador no escenciales o estudiante,n/a,centro C,centro B,centro E,false
+642-41-9224,Benedicto,Casella,Female,66,Canelones,jubilado,Obesidad,centro C,centro E,centro B,false
+530-16-4259,Fabian,Helstrom,Female,18,Río Negro,trabajador no escenciales o estudiante,n/a,centro D,centro D,centro C,false
+812-06-5967,Dion,Andric,Male,56,Canelones,trabajador no escenciales o estudiante,Diabetes,s/p,s/p,s/p,false
+295-80-5423,Amerigo,Gagie,Male,57,Montevideo,trabajador no escenciales o estudiante,Inmuno deficiencias,centro E,centro E,centro C,false
+788-43-3159,Ludvig,Leyburn,Female,68,Canelones,jubilado,n/a,s/p,s/p,s/p,false
+403-45-4031,Theda,Livingston,Male,52,Paysandú,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro D,centro A,centro A,false
+446-58-2066,Wolf,Collins,Female,58,Montevideo,trabajador no escenciales o estudiante,Hypertension,centro C,centro D,centro B,true
+270-89-0935,Alaine,Kingswood,Male,21,Montevideo,trabajador escenciales,Hypertension,centro C,centro C,centro A,false
+139-51-7800,Christen,Reinard,Female,21,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro B,centro D,false
+278-81-9790,Julio,Fridaye,Female,71,Paysandú,jubilado,n/a,centro E,centro E,centro E,false
+322-20-5252,Moise,Baptista,Female,71,Montevideo,jubilado,Hypertension,centro C,centro A,centro E,false
+572-57-6944,Jehu,Lamdin,Female,37,Montevideo,trabajador escenciales,Obesidad,centro D,centro B,centro E,false
+215-92-9657,Frederica,Shawyers,Female,76,Montevideo,jubilado,Inmuno deficiencias,centro C,centro C,centro D,false
+625-28-3613,Yale,Goadsby,Female,58,Florida,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro E,centro A,centro D,false
+639-04-9465,Nickie,Aldham,Female,69,Montevideo,jubilado,n/a,centro C,centro B,centro C,false
+127-56-1284,Fernande,Riggey,Male,18,Montevideo,trabajador no escenciales o estudiante,n/a,centro C,centro C,centro C,false
+332-37-5083,Rosalie,O'Lyhane,Female,36,Montevideo,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro E,centro C,centro E,false
+130-16-6806,Gill,Swaisland,Female,49,Salto,trabajador no escenciales o estudiante,n/a,centro E,centro A,centro A,false
+786-27-0940,Robers,Ottery,Female,51,Artigas,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro C,centro E,centro A,false
+899-05-0898,Guglielma,Tirkin,Male,38,Montevideo,trabajador escenciales,n/a,centro B,centro C,centro E,false
+159-28-7181,Clari,Jarman,Male,32,Montevideo,trabajador escenciales,n/a,centro A,centro E,centro C,false
+860-77-1230,Gibbie,Linne,Female,61,Montevideo,trabajador escenciales,Hypertension,centro B,centro B,centro C,false
+747-51-4313,Missy,Slocomb,Male,50,Soriano,trabajador no escenciales o estudiante,n/a,centro A,centro E,centro E,false
+735-70-4746,Emilio,Drever,Male,43,Canelones,trabajador no escenciales o estudiante,Hypertension,centro B,centro C,centro C,false
+222-71-4894,Chantal,Le febre,Female,42,Paysandú,trabajador no escenciales o estudiante,Diabetes,centro B,centro A,centro A,false
+357-31-2297,Waverly,Venour,Female,50,Canelones,trabajador no escenciales o estudiante,n/a,centro A,centro D,centro A,false
+269-53-2375,Maryl,Archley,Female,30,Maldonado,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro A,centro B,centro D,true
+718-73-9608,Ynes,Edmonds,Male,37,Treinta y Tres,trabajador no escenciales o estudiante,n/a,centro B,centro B,centro D,false
+184-99-2973,Gianina,Dressell,Male,42,Montevideo,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro E,centro C,centro E,false
+262-51-9713,Obediah,Cardew,Female,37,Canelones,trabajador no escenciales o estudiante,Obesidad,centro D,centro B,centro D,true
+496-01-1744,Christyna,Androck,Female,20,Treinta y Tres,trabajador no escenciales o estudiante,n/a,centro B,centro D,centro B,false
+782-09-6011,Laurie,Bartell,Male,34,Montevideo,trabajador no escenciales o estudiante,Hypertension,centro C,centro D,centro C,false
+572-35-7147,Zara,Dorot,Female,34,Montevideo,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro E,centro B,centro A,false
+135-75-0432,Letisha,Uebel,Male,77,Durazno,jubilado,Asma,centro C,centro E,centro D,true
+117-26-0706,Grove,Engel,Female,78,Montevideo,jubilado,Hypertension,centro C,centro B,centro C,false
+726-57-6397,Sophey,Mullan,Female,19,Colonia,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro A,centro E,centro D,false
+543-21-8980,Tallou,Hayer,Female,55,Montevideo,trabajador no escenciales o estudiante,n/a,centro A,centro B,centro C,false
+269-85-5661,Sandor,McGeagh,Male,73,Lavalleja,jubilado,Condiciones cardiacas severas,centro C,centro A,centro B,false
+613-40-5132,Corrie,Hanrahan,Male,74,Montevideo,jubilado,n/a,centro D,centro C,centro C,false
+657-99-7181,Lacy,Pflieger,Male,72,Montevideo,jubilado,n/a,centro A,centro B,centro A,false
+201-19-8872,Bessie,Gaitley,Male,64,Tacuarembó,trabajador no escenciales o estudiante,n/a,centro C,centro B,centro B,false
+367-22-1019,Nonah,Mushett,Female,58,Canelones,trabajador no escenciales o estudiante,Asma,centro C,centro D,centro C,false
+529-48-7150,Henrieta,Schultze,Female,45,Canelones,trabajador no escenciales o estudiante,n/a,s/p,s/p,s/p,false
+587-62-1529,Morrie,Boycott,Male,57,Salto,trabajador no escenciales o estudiante,Diabetes,centro E,centro D,centro A,false
+473-56-4923,Claudius,Obal,Female,34,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro C,centro B,false
+878-88-4098,Sherm,Cotes,Female,85,Rivera,jubilado,Obesidad,centro B,centro D,centro E,false
+167-28-8529,Thedric,Zecchinelli,Male,46,Salto,trabajador no escenciales o estudiante,Hypertension,centro C,centro D,centro C,false
+696-60-5145,Walker,Gethyn,Female,18,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro B,centro C,false
+634-76-6998,Abra,Gummer,Female,32,Montevideo,personal de la salud(primera línea),n/a,centro E,centro D,centro C,false
+604-04-5416,Guglielma,Schowenburg,Male,37,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro D,centro C,false
+254-78-1249,Livy,Sherwill,Female,33,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro B,centro D,true
+217-72-8663,Nannette,Kerby,Male,42,Río Negro,trabajador no escenciales o estudiante,n/a,centro D,centro C,centro D,false
+502-98-5196,Kitti,Dusting,Female,18,San José,trabajador escenciales,Obesidad,centro C,centro C,centro A,false
+114-34-7970,Waiter,Latan,Male,52,Montevideo,trabajador no escenciales o estudiante,Obesidad,centro E,centro B,centro B,false
+883-83-6346,Mildred,McGahern,Female,18,Montevideo,trabajador no escenciales o estudiante,Hypertension,centro E,centro E,centro A,false
+513-57-1154,Harmonia,Stobbes,Female,70,Canelones,jubilado,n/a,centro A,centro B,centro A,false
+336-13-2525,Dion,Krojn,Male,37,Artigas,trabajador no escenciales o estudiante,n/a,centro A,centro E,centro D,false
+876-94-2848,Rockie,Greenway,Female,73,Montevideo,jubilado,n/a,centro E,centro A,centro B,false
+333-03-9888,Emmy,Bengoechea,Female,70,Montevideo,jubilado,Hypertension,centro D,centro A,centro E,false
+468-83-9239,Ambrosio,Lilleycrop,Male,64,Canelones,trabajador no escenciales o estudiante,n/a,centro D,centro A,centro D,false
+484-47-6037,Stacee,Dowsey,Male,36,Artigas,trabajador no escenciales o estudiante,n/a,centro A,centro D,centro D,false
+198-39-0936,Frederica,Repper,Female,90,Canelones,jubilado,Asma,s/p,s/p,s/p,false
+361-71-8408,Evvy,Butler,Male,47,San José,trabajador no escenciales o estudiante,n/a,centro B,centro A,centro B,false
+727-93-6228,Madel,McKeevers,Female,18,Canelones,trabajador no escenciales o estudiante,Hypertension,centro E,centro B,centro E,false
+882-33-8662,Katrine,Tavener,Female,39,Montevideo,trabajador escenciales,n/a,centro A,centro E,centro E,false
+846-07-9888,Vicki,Sainte Paul,Female,18,Canelones,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro D,centro C,centro D,false
+306-67-1155,Thacher,Trowsdall,Female,45,Río Negro,trabajador no escenciales o estudiante,Obesidad,centro A,centro B,centro E,false
+164-73-4372,Constantin,Dyche,Female,34,Canelones,trabajador no escenciales o estudiante,Obesidad,centro B,centro B,centro D,false
+516-23-9096,Burr,Pasticznyk,Female,18,Montevideo,trabajador no escenciales o estudiante,n/a,centro A,centro E,centro D,false
+714-28-4872,Pammy,Borris,Female,22,Rivera,trabajador no escenciales o estudiante,n/a,centro B,centro B,centro C,false
+703-84-9598,Stacy,Bonicelli,Male,58,Maldonado,trabajador no escenciales o estudiante,n/a,centro C,centro B,centro A,false
+642-51-5714,Fred,Rylstone,Male,72,Río Negro,jubilado,Condiciones cardiacas severas,centro C,centro A,centro D,false
+242-56-9678,Dorotea,Dillamore,Male,76,Tacuarembó,jubilado,n/a,s/p,s/p,s/p,false
+443-18-8644,Tobias,Eary,Female,33,Canelones,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro D,centro A,centro B,false
+637-33-6823,Ruby,Dufaire,Female,77,Montevideo,jubilado,Hypertension,centro D,centro A,centro C,false
+235-97-6922,Doralynn,Akester,Female,24,Artigas,trabajador no escenciales o estudiante,n/a,centro E,centro B,centro D,false
+347-25-9461,Zaccaria,Rookwell,Female,31,Cerro Largo,trabajador escenciales,n/a,centro A,centro A,centro D,false
+605-19-1385,Myranda,Diggin,Female,60,Montevideo,trabajador no escenciales o estudiante,Hypertension,centro B,centro D,centro E,false
+669-06-1556,Claus,Cominello,Female,29,Salto,trabajador no escenciales o estudiante,Hypertension,centro B,centro B,centro E,false
+775-50-5201,Baxie,Minero,Male,60,Montevideo,trabajador no escenciales o estudiante,n/a,s/p,s/p,s/p,false
+502-73-0903,Annmaria,Bythell,Female,40,Canelones,trabajador no escenciales o estudiante,n/a,centro D,centro B,centro A,false
+773-31-1241,Arlan,Lowbridge,Female,18,Montevideo,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro B,centro A,centro C,false
+242-36-3827,Malchy,Baudoux,Female,23,Treinta y Tres,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro D,centro D,centro B,false
+612-56-3777,Gracie,Adne,Male,43,Salto,trabajador no escenciales o estudiante,n/a,centro B,centro D,centro A,false
+234-19-3823,Dorothy,Manning,Male,18,Montevideo,trabajador no escenciales o estudiante,n/a,centro C,centro B,centro A,false
+580-75-3646,Abbot,Kollatsch,Male,58,Montevideo,trabajador no escenciales o estudiante,Obesidad,centro E,centro A,centro A,false
+502-50-9030,Eirena,Gradon,Male,56,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro C,centro E,false
+786-21-6514,Celestine,Maysor,Female,58,Montevideo,trabajador no escenciales o estudiante,Cancer (general),centro A,centro B,centro C,false
+148-60-6860,Ricki,Kitley,Male,52,Lavalleja,trabajador no escenciales o estudiante,n/a,centro B,centro E,centro D,true
+492-47-8579,Vanya,Clemendot,Female,18,Montevideo,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro D,centro A,centro E,true
+268-74-4165,Germain,Shrubshall,Female,42,Maldonado,trabajador no escenciales o estudiante,n/a,centro E,centro C,centro B,false
+544-27-9977,Valentine,Harle,Female,25,Canelones,trabajador no escenciales o estudiante,n/a,centro D,centro C,centro D,false
+220-27-8691,Lenette,Smithson,Female,31,Montevideo,trabajador no escenciales o estudiante,Asma,centro A,centro C,centro D,false
+508-68-2460,Veronica,Bishopp,Male,18,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro E,centro A,false
+737-67-5837,Bennett,Paulot,Female,56,Montevideo,trabajador no escenciales o estudiante,Diabetes,centro B,centro A,centro B,false
+387-53-6146,Adelice,Behninck,Male,66,Canelones,jubilado,Condiciones cardiacas severas,centro D,centro C,centro C,false
+328-62-3602,Archaimbaud,Ousley,Female,42,Paysandú,trabajador no escenciales o estudiante,n/a,centro D,centro B,centro C,false
+833-75-4015,Rubie,Cammacke,Female,31,Montevideo,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro A,centro C,centro C,false
+368-37-5344,Heindrick,Kareman,Female,36,Montevideo,trabajador no escenciales o estudiante,Obesidad,centro C,centro A,centro C,false
+182-53-5298,Josiah,Stockow,Female,68,Montevideo,jubilado,n/a,centro A,centro E,centro E,false
+386-24-0070,Neely,Flather,Female,44,Colonia,trabajador no escenciales o estudiante,n/a,centro D,centro B,centro C,false
+279-05-5550,Chryste,Yuranovev,Male,18,Colonia,trabajador no escenciales o estudiante,n/a,centro C,centro E,centro E,false
+477-02-0477,Pren,Dixcee,Male,57,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro B,centro E,false
+781-17-2889,Davis,O'Shesnan,Male,19,Maldonado,trabajador no escenciales o estudiante,Diabetes,centro E,centro C,centro D,false
+792-94-7365,Christal,MacNeely,Male,38,Maldonado,trabajador no escenciales o estudiante,n/a,centro E,centro A,centro D,false
+498-94-2478,Marcie,Gurko,Male,59,Rivera,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro D,centro B,centro A,false
+377-54-9167,Nissy,Javes,Male,55,Rivera,trabajador escenciales,n/a,centro C,centro A,centro C,false
+780-33-3599,Pam,Pennington,Male,54,Canelones,trabajador escenciales,n/a,centro C,centro D,centro A,false
+153-17-0843,Rennie,Quixley,Male,47,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro C,centro D,false
+252-40-1413,Selestina,Peterken,Female,69,Montevideo,jubilado,Hypertension,centro B,centro A,centro C,false
+108-67-5959,Jaime,Reely,Male,48,Canelones,trabajador no escenciales o estudiante,n/a,centro D,centro A,centro A,false
+537-42-9451,Antonius,Livezley,Male,84,Paysandú,jubilado,n/a,centro B,centro A,centro A,false
+866-08-8982,Cammi,Arran,Female,26,Montevideo,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro C,centro A,centro E,false
+449-53-0042,Mylo,Reppaport,Male,62,Maldonado,trabajador no escenciales o estudiante,Hypertension,centro A,centro C,centro A,false
+385-39-9758,Stearn,Eouzan,Male,18,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro C,centro C,false
+654-71-0564,Dayle,Boyde,Male,60,Montevideo,trabajador no escenciales o estudiante,n/a,centro C,centro D,centro B,false
+519-32-3524,Kimberlyn,Konneke,Male,49,Montevideo,trabajador no escenciales o estudiante,Cancer (general),s/p,s/p,s/p,false
+647-45-8790,Friedrich,Tuffin,Male,27,Salto,trabajador no escenciales o estudiante,Hypertension,centro D,centro D,centro B,false
+435-55-3804,Salome,Top,Female,57,Artigas,trabajador escenciales,Hypertension,centro B,centro A,centro B,false
+139-13-5188,Camila,Voelker,Female,55,Montevideo,trabajador no escenciales o estudiante,Hypertension,centro B,centro B,centro C,false
+498-73-1947,Alessandro,Bilfoot,Male,65,Canelones,jubilado,Inmuno deficiencias,centro A,centro E,centro A,false
+874-58-8685,Marv,Jacobsohn,Female,36,Colonia,trabajador escenciales,Condiciones cardiacas severas,centro D,centro E,centro E,false
+360-13-0529,Yvonne,Capnerhurst,Male,53,Rivera,trabajador escenciales,Condiciones cardiacas severas,centro D,centro E,centro C,false
+701-64-5418,Zacherie,Brimmicombe,Male,43,Canelones,trabajador escenciales,Condiciones cardiacas severas,centro A,centro A,centro A,false
+797-16-9154,Shayla,Syseland,Female,53,Florida,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro E,centro E,centro E,false
+294-54-3466,Moira,Biasini,Male,40,Cerro Largo,trabajador no escenciales o estudiante,n/a,centro D,centro A,centro C,false
+221-73-0359,Querida,Tovey,Female,28,Montevideo,trabajador no escenciales o estudiante,Obesidad,centro E,centro D,centro A,false
+596-91-0074,Brynna,Lowten,Male,26,Colonia,trabajador escenciales,n/a,centro C,centro E,centro E,false
+365-64-8315,Cybil,Coviello,Male,33,Montevideo,trabajador escenciales,Asma,centro E,centro B,centro E,false
+643-66-6196,Jolie,Labrenz,Male,58,Durazno,trabajador no escenciales o estudiante,Diabetes,centro A,centro E,centro E,false
+319-95-8552,Donovan,Dinsale,Female,48,Montevideo,trabajador no escenciales o estudiante,n/a,centro D,centro A,centro E,false
+217-31-8885,Ignacio,Andrez,Female,64,Montevideo,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro D,centro B,centro A,false
+411-30-1716,Silvano,Sellens,Female,69,Montevideo,jubilado,n/a,centro A,centro D,centro B,false
+693-47-0623,Germain,Hubbucke,Female,18,Canelones,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro D,centro E,centro D,false
+821-07-8903,Allie,Demageard,Female,18,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro D,centro A,false
+375-53-0210,Charmine,Edgecumbe,Female,55,Maldonado,trabajador escenciales,n/a,centro A,centro E,centro C,false
+449-95-6497,Fiona,Beernaert,Male,62,San José,trabajador no escenciales o estudiante,n/a,centro B,centro E,centro B,false
+588-86-6878,Marysa,Garford,Female,24,Canelones,trabajador no escenciales o estudiante,n/a,centro E,centro E,centro E,false
+860-63-4789,Fiorenze,Martijn,Male,24,Montevideo,trabajador no escenciales o estudiante,Hypertension,centro D,centro A,centro C,false
+840-15-2404,Tristam,Cumberpatch,Male,82,Canelones,jubilado,n/a,centro B,centro D,centro A,false
+353-30-0603,Valli,Harkess,Male,40,Flores,trabajador no escenciales o estudiante,n/a,centro D,centro A,centro A,false
+697-96-6505,Aurlie,Tinn,Female,52,Canelones,trabajador escenciales,n/a,centro B,centro D,centro C,false
+517-26-5597,Joe,Burnes,Male,56,Soriano,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro D,centro A,centro E,false
+565-61-6350,Jannel,Frantzeni,Male,66,Rocha,jubilado,n/a,centro C,centro E,centro B,false
+182-53-1266,Rivkah,Gwinnel,Female,50,Colonia,trabajador no escenciales o estudiante,n/a,s/p,s/p,s/p,false
+582-97-3726,Reynard,Dumsday,Male,41,Soriano,trabajador no escenciales o estudiante,n/a,centro C,centro A,centro E,false
+313-77-9264,Clive,Vannet,Male,38,Soriano,trabajador no escenciales o estudiante,n/a,centro C,centro E,centro C,false
+101-82-9133,Rikki,Corbet,Female,18,Canelones,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro C,centro C,centro A,false
+596-10-1751,Giff,Esch,Male,18,Lavalleja,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro C,centro C,centro D,false
+830-05-0394,Ed,Buxsey,Female,33,Montevideo,trabajador no escenciales o estudiante,n/a,s/p,s/p,s/p,false
+186-86-0011,Aldo,Brightwell,Male,71,San José,jubilado,Diabetes,centro B,centro C,centro E,false
+548-16-6523,Enos,Fegan,Female,36,Cerro Largo,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro B,centro D,centro C,false
+602-04-6741,Bonnibelle,Bothams,Male,20,Salto,trabajador no escenciales o estudiante,Hypertension,centro B,centro B,centro B,false
+129-01-1660,Steward,Ledgley,Female,40,Montevideo,trabajador escenciales,Hypertension,centro E,centro A,centro A,false
+767-39-5305,Elsey,Grigor,Male,54,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro B,centro E,false
+133-06-3310,Pearline,McCann,Male,39,Canelones,trabajador no escenciales o estudiante,n/a,centro D,centro C,centro B,false
+329-30-5051,Ethelyn,Osorio,Male,44,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro D,centro C,false
+579-86-9109,Gilberto,Harmer,Female,75,Flores,jubilado,Enfermedad crónica Hepática,centro B,centro E,centro E,false
+283-55-3309,Denny,Collaton,Female,36,Tacuarembó,trabajador no escenciales o estudiante,n/a,centro C,centro C,centro D,false
+818-69-4112,Lizette,Pochon,Female,22,Montevideo,trabajador no escenciales o estudiante,n/a,s/p,s/p,s/p,false
+387-84-2916,Moe,Morfell,Male,57,Montevideo,trabajador no escenciales o estudiante,Obesidad,centro D,centro C,centro E,false
+820-15-1783,Raquela,Jira,Male,52,Maldonado,trabajador no escenciales o estudiante,n/a,centro C,centro C,centro D,false
+763-12-9582,Yul,Krienke,Female,60,Salto,trabajador no escenciales o estudiante,Hypertension,centro D,centro E,centro E,false
+571-81-5033,Veradis,Stitch,Female,31,Canelones,trabajador no escenciales o estudiante,Cancer (general),centro A,centro A,centro B,false
+493-32-4148,Svend,Garment,Male,18,Salto,trabajador escenciales,n/a,centro B,centro E,centro B,false
+794-46-8606,Normand,Christiensen,Female,47,Montevideo,trabajador no escenciales o estudiante,n/a,centro D,centro C,centro E,false
+523-05-4313,Jenni,Ponting,Male,26,Artigas,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro A,centro E,centro A,false
+889-81-7764,Livvyy,Foxen,Male,33,Rivera,trabajador no escenciales o estudiante,n/a,centro D,centro C,centro D,false
+377-29-9644,Kip,Aicheson,Male,66,Montevideo,jubilado,Hypertension,centro A,centro C,centro A,false
+623-48-2973,Chet,Goering,Male,48,Montevideo,trabajador no escenciales o estudiante,n/a,centro C,centro E,centro A,false
+160-45-3346,Gavan,Ellerker,Male,29,Montevideo,trabajador escenciales,n/a,centro A,centro C,centro C,false
+766-56-6656,Rustin,Schafer,Female,38,Montevideo,personal de la salud(segunda línea),Enfermedad crónica Hepática,centro B,centro B,centro C,false
+192-88-6202,Loy,Crayden,Female,18,Salto,trabajador no escenciales o estudiante,n/a,centro E,centro A,centro D,false
+860-63-5126,Trescha,O Mullen,Female,35,Montevideo,trabajador no escenciales o estudiante,Hypertension,centro B,centro C,centro D,false
+816-47-9709,Karlyn,Hustings,Female,47,Colonia,personal de la salud(segunda línea),Obesidad,centro B,centro A,centro A,false
+138-39-9255,Lemmie,Kewish,Female,49,Maldonado,trabajador no escenciales o estudiante,Diabetes,centro E,centro C,centro D,false
+314-95-6530,Arleen,Levi,Male,58,Cerro Largo,trabajador escenciales,Enfermedad crónica Hepática,centro A,centro D,centro C,false
+420-75-8488,Dolores,Alps,Male,61,Paysandú,trabajador no escenciales o estudiante,n/a,centro A,centro C,centro A,false
+452-66-0832,Karlyn,Ahlin,Male,18,Montevideo,trabajador no escenciales o estudiante,Hypertension,centro A,centro E,centro C,false
+491-79-2181,Marsh,Gionettitti,Male,56,Montevideo,trabajador no escenciales o estudiante,Hypertension,centro E,centro D,centro A,false
+539-94-5902,Dorelle,Burstowe,Female,47,Maldonado,trabajador no escenciales o estudiante,Asma,centro A,centro C,centro C,false
+857-38-2623,Lotta,Fahrenbacher,Male,32,Montevideo,trabajador no escenciales o estudiante,Obesidad,centro C,centro E,centro A,false
+394-48-1890,Zelda,Lunny,Male,86,Montevideo,jubilado,n/a,centro E,centro C,centro A,false
+682-22-4034,Darryl,Boaler,Female,55,Canelones,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro B,centro A,centro D,false
+346-82-7834,Vivie,Gossage,Male,63,Maldonado,trabajador no escenciales o estudiante,n/a,centro C,centro A,centro D,false
+892-52-0810,Ulrika,Georges,Male,48,Florida,trabajador no escenciales o estudiante,n/a,centro E,centro C,centro E,true
+489-57-2520,Stafford,Bastick,Male,48,Flores,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro A,centro D,centro A,false
+689-96-7575,Petey,Stud,Male,21,San José,trabajador no escenciales o estudiante,n/a,centro C,centro E,centro D,false
+385-23-2802,Tallie,Pringle,Female,18,Maldonado,trabajador no escenciales o estudiante,n/a,centro C,centro A,centro A,false
+853-12-1629,Lorrie,McCathay,Female,18,Maldonado,trabajador no escenciales o estudiante,n/a,centro C,centro C,centro A,false
+116-44-6795,Wit,Gaspard,Female,76,San José,jubilado,Condiciones cardiacas severas,centro A,centro A,centro D,false
+824-10-7518,Brandice,Kuhne,Male,66,Paysandú,jubilado,Enfermedad crónica Hepática,centro D,centro C,centro E,false
+668-27-6866,Maxie,Wiggins,Female,46,Montevideo,trabajador no escenciales o estudiante,Condiciones cardiacas severas,centro E,centro E,centro B,false
+796-59-4379,Dalenna,Brecknall,Female,45,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro A,centro C,false
+273-98-5320,Elliot,Gwillim,Male,55,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro C,centro B,false
+745-07-7488,Madelle,Wrathmall,Male,38,Canelones,trabajador no escenciales o estudiante,n/a,centro E,centro C,centro A,false
+716-63-7642,Bear,Speller,Male,28,Montevideo,trabajador no escenciales o estudiante,Diabetes,centro B,centro D,centro C,false
+820-38-5184,Darcey,McInulty,Female,29,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro C,centro E,false
+706-39-6667,Pauly,Javes,Female,70,Colonia,jubilado,Condiciones cardiacas severas,centro B,centro A,centro D,false
+105-70-3313,Rory,Labrom,Female,37,Montevideo,trabajador escenciales,Hypertension,centro E,centro D,centro B,false
+882-20-0514,Nanni,Kubicek,Male,24,Montevideo,trabajador no escenciales o estudiante,n/a,s/p,s/p,s/p,false
+770-77-0985,Kali,Maseyk,Female,50,Rivera,trabajador no escenciales o estudiante,n/a,centro D,centro E,centro C,false
+591-14-4412,Belvia,Fiddymont,Male,43,Montevideo,trabajador no escenciales o estudiante,Hypertension,centro C,centro D,centro B,false
+341-70-2792,Conant,Sharpe,Male,66,Montevideo,jubilado,n/a,centro D,centro D,centro B,false
+206-48-9116,Jess,Batie,Female,49,Montevideo,trabajador no escenciales o estudiante,n/a,centro C,centro D,centro D,false
+579-38-6981,Bianca,Morse,Male,20,Paysandú,trabajador no escenciales o estudiante,n/a,centro D,centro A,centro B,false
+636-68-6493,Emmit,Blackleech,Female,44,Canelones,trabajador no escenciales o estudiante,n/a,centro E,centro E,centro C,false
+209-35-7280,Susan,Senecaut,Male,40,Montevideo,trabajador escenciales,n/a,centro A,centro A,centro A,false
+563-73-6982,Frederick,Matkovic,Female,52,Maldonado,trabajador no escenciales o estudiante,Hypertension,centro E,centro B,centro D,false
+792-99-2274,Carol,Dyster,Male,30,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro C,centro B,true
+692-60-2819,Genevra,Olivello,Male,42,Salto,trabajador no escenciales o estudiante,n/a,centro B,centro A,centro D,false
+692-15-9860,Kaycee,Godlonton,Male,72,Montevideo,jubilado,Hypertension,centro D,centro E,centro C,false
+397-39-2402,Burg,Beernt,Male,55,Cerro Largo,trabajador no escenciales o estudiante,Obesidad,centro B,centro A,centro C,false
+163-86-1533,Odo,Stiggles,Female,51,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro C,centro E,false
+447-91-6382,Malvin,Whiteland,Female,80,Montevideo,jubilado,Hypertension,centro E,centro A,centro D,false
+710-02-9860,Silvain,Roskam,Female,79,Montevideo,jubilado,n/a,centro D,centro B,centro B,false
+380-86-9708,Cob,Cannaway,Female,18,Rocha,trabajador no escenciales o estudiante,n/a,centro C,centro D,centro C,false
+255-84-3232,Flinn,Doulton,Female,48,Canelones,trabajador no escenciales o estudiante,n/a,centro A,centro A,centro A,false
+558-75-1451,Basil,McVittie,Male,92,Cerro Largo,jubilado,Obesidad,s/p,s/p,s/p,false
+709-52-3548,Robbyn,Westwick,Female,20,Canelones,trabajador no escenciales o estudiante,n/a,centro A,centro A,centro E,false
+318-77-5908,Judy,Hoyles,Male,21,Canelones,trabajador no escenciales o estudiante,Obesidad,centro C,centro D,centro A,false
+205-09-1617,Benji,Pargiter,Male,48,Montevideo,trabajador no escenciales o estudiante,Diabetes,centro A,centro A,centro D,false
+218-39-8860,Kennie,Dudson,Male,18,Montevideo,trabajador no escenciales o estudiante,Enfermedad crónica Hepática,centro E,centro B,centro E,false
+132-39-8298,Julio,Kynman,Male,18,Colonia,trabajador no escenciales o estudiante,n/a,centro C,centro D,centro A,false
+624-68-4812,Gleda,Pardie,Female,55,Montevideo,trabajador no escenciales o estudiante,n/a,centro C,centro A,centro A,false
+538-14-9835,Sara,Cathcart,Female,21,Canelones,trabajador no escenciales o estudiante,n/a,centro C,centro D,centro A,false
+807-81-5448,Randy,O'Fihillie,Male,40,Canelones,trabajador no escenciales o estudiante,n/a,centro B,centro E,centro D,false
+770-74-6120,Anderson,Berrigan,Male,49,San José,trabajador no escenciales o estudiante,n/a,centro A,centro D,centro B,false
+691-46-8729,Neil,Emblen,Female,50,Cerro Largo,trabajador no escenciales o estudiante,n/a,centro C,centro D,centro A,false
+244-29-3321,Eilis,Condict,Female,75,Canelones,jubilado,n/a,centro E,centro C,centro E,false
+769-20-0248,Jillana,Mecco,Female,54,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro C,centro E,true
+290-89-1106,Marleah,Fitzroy,Female,48,Artigas,trabajador no escenciales o estudiante,n/a,centro C,centro E,centro E,false
+889-86-4055,Batholomew,Rothermel,Male,18,Montevideo,trabajador no escenciales o estudiante,n/a,centro E,centro B,centro C,false
+325-78-1248,Deborah,Neave,Female,53,Salto,trabajador no escenciales o estudiante,n/a,centro A,centro B,centro E,false
+669-55-9497,Jocelin,Skechley,Female,64,Montevideo,trabajador no escenciales o estudiante,n/a,centro A,centro B,centro A,false
+746-07-9384,Minerva,Killcross,Male,42,Rocha,trabajador no escenciales o estudiante,n/a,centro B,centro C,centro E,false
+489-44-9829,Dalston,Laird-Craig,Male,71,Montevideo,jubilado,n/a,centro D,centro A,centro A,false
+272-89-0815,Averil,Vidgeon,Female,66,Canelones,jubilado,n/a,centro B,centro E,centro A,false
+324-19-3267,Millicent,Antosik,Female,48,Río Negro,trabajador escenciales,Obesidad,centro C,centro B,centro D,false
+383-51-9359,Marion,Bes,Female,18,Montevideo,trabajador no escenciales o estudiante,n/a,centro D,centro B,centro A,false
+252-45-2641,Rhianon,Abell,Female,95,Canelones,jubilado,n/a,centro B,centro C,centro D,false
+885-56-9653,Sybyl,Tardiff,Male,51,Montevideo,trabajador no escenciales o estudiante,Asma,centro C,centro C,centro C,false
+809-42-7816,Gifford,Shottin,Female,67,Montevideo,jubilado,Condiciones cardiacas severas,centro E,centro D,centro C,false
+398-73-2072,Tatum,Burley,Female,69,Montevideo,jubilado,Hypertension,centro D,centro A,centro D,false
+881-91-2827,Randolph,Golthorpp,Male,29,Colonia,trabajador no escenciales o estudiante,n/a,centro A,centro A,centro A,false
+443-60-9070,Far,Corteis,Male,51,Colonia,trabajador no escenciales o estudiante,Hypertension,centro E,centro A,centro C,false
+134-79-0847,Raffaello,Farley,Male,53,Artigas,trabajador no escenciales o estudiante,n/a,centro D,centro C,centro A,false
+581-35-3106,Tamera,Grafham,Male,18,Montevideo,trabajador no escenciales o estudiante,n/a,centro C,centro D,centro C,false
+283-95-4069,Lyle,Merriment,Female,48,Rocha,trabajador no escenciales o estudiante,n/a,centro B,centro D,centro B,false
+339-54-1423,Giacopo,Bern,Female,53,Montevideo,trabajador no escenciales o estudiante,n/a,centro B,centro B,centro B,false
+628-94-3289,Prue,Cadell,Female,50,Montevideo,trabajador escenciales,Diabetes,centro D,centro A,centro C,false
+302-40-8118,Ammamaria,Pendlebery,Female,38,Artigas,trabajador no escenciales o estudiante,n/a,centro C,centro C,centro B,true
+184-06-7385,Dorelle,MacKay,Female,51,Montevideo,trabajador no escenciales o estudiante,Obesidad,centro C,centro B,centro E,false
